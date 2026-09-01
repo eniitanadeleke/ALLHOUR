@@ -1,0 +1,1 @@
+.page-stock .hero{padding-top:clamp(54px,7vw,96px)}.page-stock .hero-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.8fr);gap:clamp(30px,5vw,68px);align-items:end}@media(max-width:880px){.page-stock .hero-grid{grid-template-columns:1fr;align-items:start}}

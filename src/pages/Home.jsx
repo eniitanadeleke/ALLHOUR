@@ -7,185 +7,181 @@ export default function Home() {
     <div className="view on page-shell page-home" id="home">
 
       {/* HERO SECTION */}
-<section className="hero shell">
+      <section className="hero shell">
 
-  <div className="hero-orb orb-one" aria-hidden="true"></div>
-  <div className="hero-orb orb-two" aria-hidden="true"></div>
+        <div className="hero-orb orb-one" aria-hidden="true"></div>
+        <div className="hero-orb orb-two" aria-hidden="true"></div>
 
-  <div className="hero-grid">
+        <div className="hero-grid">
 
-    <div className="hero-copy">
-      <span className="label">Retail across emerging markets</span>
+          <div className="hero-copy">
 
-      <h1 className="display">
-        Extraordinary.
-        <br />
-        All Day.
-      </h1>
+            <h1 className="display">
+              Extraordinary.
+              <br />
+              All Day.
+            </h1>
 
-      <span className="hero-line" aria-hidden="true"></span>
-    </div>
+            <span className="hero-line" aria-hidden="true"></span>
+          </div>
 
-    <div className="hero-content">
+          <div className="hero-content">
 
-      <div className="hero-glass">
-        <p className="lede">
-          We build and run retail that stays open, stays stocked and stays
-          close to the people who need it. Supermarkets, pharmacies,
-          hypermarkets, mini marts and neighbourhood stores.
-        </p>
+            <div className="hero-glass">
+              <p className="lede">
+                We build and run retail that stays open, stays stocked and stays
+                close to the people who need it. Supermarkets, pharmacies,
+                hypermarkets, mini marts and neighbourhood stores.
+              </p>
 
-        <div className="btn-row">
-          <Link className="btn" to="/stock">
-            Stock your shop <span className="arrow">→</span>
-          </Link>
+              <div className="btn-row">
+                <Link className="btn" to="/stock">
+                  Stock your shop <span className="arrow">→</span>
+                </Link>
 
-          <Link className="btn ghost" to="/franchise">
-            Own a franchise
-          </Link>
+                <Link className="btn ghost" to="/franchise">
+                  Own a franchise
+                </Link>
+              </div>
+            </div>
+
+          </div>
+
         </div>
-      </div>
-
-    </div>
-
-  </div>
 
 
-  {/* 24 HOUR STRIP */}
-  <div className="spine hero-spine" aria-hidden="true">
+        {/* 24 HOUR STRIP */}
+        <div className="spine hero-spine" aria-hidden="true">
 
-    <div className="spine-glow"></div>
+          <div className="spine-glow"></div>
 
-    <HourSpine />
+          <HourSpine />
 
-    <div className="spine-key">
-      <span>
-        <b>00:00</b> Night trading
-      </span>
+          <div className="spine-key">
+            <span>
+              <b>00:00</b> Night trading
+            </span>
 
-      <span>
-        <b>All hours</b>
-      </span>
+            <span>
+              <b>All hours</b>
+            </span>
 
-      <span>
-        Day trading <b>23:59</b>
-      </span>
-    </div>
+            <span>
+              Day trading <b>23:59</b>
+            </span>
+          </div>
 
-  </div>
-
-
-  {/* HERO PHOTOGRAPH */}
-  <div className="plate wide hero-photo">
-
-    <div className="hero-photo-overlay"></div>
-
-    <div className="photo-grid" aria-hidden="true"></div>
-
-    <div className="hero-photo-badge">
-      Open longer. Stocked better.
-    </div>
+        </div>
 
 
-    {/* FLOATING DECORATIVE PANELS */}
-    <div className="float-panel float-one" aria-hidden="true">
-      <span className="float-ring"></span>
-      <span className="float-bar"></span>
-    </div>
+        {/* HERO PHOTOGRAPH */}
+        <div className="plate wide hero-photo">
 
-    <div className="float-panel float-two" aria-hidden="true">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
+          <div className="hero-photo-overlay"></div>
 
-    <div className="float-panel float-three" aria-hidden="true">
-      <i></i>
-      <i></i>
-      <i></i>
-      <i></i>
-      <i></i>
-      <i></i>
-    </div>
+          <div className="photo-grid" aria-hidden="true"></div>
+
+          <div className="hero-photo-badge">
+            Open longer. Stocked better.
+          </div>
+
+          <div className="float-panel float-one" aria-hidden="true">
+            <span className="float-ring"></span>
+            <span className="float-bar"></span>
+          </div>
+
+          <div className="float-panel float-two" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+          <div className="float-panel float-three" aria-hidden="true">
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+          </div>
+
+          <div className="hero-photo-content">
+
+            <span className="cap">
+              <b>Photograph</b>
+
+              <span>
+                A busy All Hours store at dusk, lit inside, customers at the till
+                and the pharmacy counter visible
+              </span>
+            </span>
+
+            <Link className="hero-photo-link" to="/about">
+              Discover All Hours <span className="arrow">→</span>
+            </Link>
+
+          </div>
+
+        </div>
+
+      </section>
 
 
-    <div className="hero-photo-content">
+      {/* INTRO SECTION */}
+      <section className="band shell intro-section">
 
-      <span className="cap">
-        <b>Photograph</b>
+        <div className="intro-bg-number" aria-hidden="true">
+          24
+        </div>
 
-        <span>
-          A busy All Hours store at dusk, lit inside, customers at the till
-          and the pharmacy counter visible
-        </span>
-      </span>
+        <div className="intro-orbit" aria-hidden="true">
+          <span></span>
+        </div>
 
-      <Link className="hero-photo-link" to="/about">
-        Discover All Hours <span className="arrow">→</span>
-      </Link>
+        <div className="split">
 
-    </div>
+          <div className="intro-heading">
 
-  </div>
+            <h2 className="display">
+              A shop is only useful when it is open and it has what you came for.
+            </h2>
 
-</section>
+            <span className="intro-line" aria-hidden="true"></span>
 
+          </div>
 
-{/* INTRO SECTION */}
-<section className="band shell intro-section">
+          <div className="body-col">
 
-  <div className="intro-bg-number" aria-hidden="true">
-    24
-  </div>
+            <p>
+              Most retail in emerging markets fails on one of two things. It
+              closes when people are free to shop, or the shelf is empty when
+              they arrive. We built the business around fixing both.
+            </p>
 
-  <div className="intro-orbit" aria-hidden="true">
-    <span></span>
-  </div>
+            <p>
+              That means longer trading hours, formats sized to the street they
+              sit on, and a supply chain that keeps stock moving from source to
+              shelf without a gap. It also means extending the same supply
+              strength to independent shop owners who are not part of our network
+              but sell to the same customers.
+            </p>
 
-  <div className="split">
+            <Link className="tlink" to="/about">
+              How we work <span className="arrow">→</span>
+            </Link>
 
-    <div className="intro-heading">
+          </div>
 
-      <h2 className="display">
-        A shop is only useful when it is open and it has what you came for.
-      </h2>
+        </div>
 
-      <span className="intro-line" aria-hidden="true"></span>
+      </section>
 
-    </div>
-
-    <div className="body-col">
-
-      <p>
-        Most retail in emerging markets fails on one of two things. It
-        closes when people are free to shop, or the shelf is empty when
-        they arrive. We built the business around fixing both.
-      </p>
-
-      <p>
-        That means longer trading hours, formats sized to the street they
-        sit on, and a supply chain that keeps stock moving from source to
-        shelf without a gap. It also means extending the same supply
-        strength to independent shop owners who are not part of our network
-        but sell to the same customers.
-      </p>
-
-      <Link className="tlink" to="/about">
-        How we work <span className="arrow">→</span>
-      </Link>
-
-    </div>
-
-  </div>
-
-</section>
 
       {/* FOUR WAYS SECTION */}
       <section className="band sunk">
         <div className="shell">
 
           <div className="head-block">
-            <span className="label">Four ways to work with us</span>
             <h2 className="display">Pick the door that fits you.</h2>
           </div>
 
@@ -231,11 +227,11 @@ export default function Home() {
         </div>
       </section>
 
+
       {/* STORE FORMATS */}
       <section className="band shell formats-section">
 
         <div className="head-block">
-          <span className="label">Store formats</span>
 
           <h2 className="display">
             Six formats, one standard.
@@ -245,6 +241,7 @@ export default function Home() {
             A full All Hours store carries a supermarket section and a pharmacy.
             Smaller shops carry one or the other, depending on the site.
           </p>
+
         </div>
 
         <div className="g3">
@@ -304,324 +301,313 @@ export default function Home() {
             See all formats in detail <span className="arrow">→</span>
           </Link>
         </div>
+
       </section>
 
+
       {/* STOCK SUPPLY SECTION */}
-<section className="band night stock-section">
+      <section className="band night stock-section">
 
-  <div className="stock-glow" aria-hidden="true"></div>
-  <div className="stock-grid-pattern" aria-hidden="true"></div>
+        <div className="stock-glow" aria-hidden="true"></div>
+        <div className="stock-grid-pattern" aria-hidden="true"></div>
 
-  <div className="shell stock-layout">
+        <div className="shell stock-layout">
 
-    <div className="stock-copy">
+          <div className="stock-copy">
 
-      <span className="label">
-        For independent shop owners
-      </span>
+            <span className="stock-accent-line" aria-hidden="true"></span>
 
-      <span className="stock-accent-line" aria-hidden="true"></span>
+            <h2 className="display">
+              Get stocked now.
+              <br />
+              Pay as you sell.
+            </h2>
 
-      <h2 className="display">
-        Get stocked now.
-        <br />
-        Pay as you sell.
-      </h2>
+            <div className="stock-ghost-number" aria-hidden="true">
+              24
+            </div>
 
-      <div className="stock-ghost-number" aria-hidden="true">
-        24
-      </div>
+            <div className="stock-seal" aria-hidden="true">
+              <span className="seal-ring">
+                <strong>24</strong>
+                <small>All Hours</small>
+              </span>
+            </div>
 
-      <div className="stock-seal" aria-hidden="true">
-        <span className="seal-ring">
-          <strong>24</strong>
-          <small>All Hours</small>
-        </span>
-      </div>
-
-    </div>
+          </div>
 
 
-    <div className="stock-panel">
+          <div className="stock-panel">
 
-      <div className="stock-panel-glow" aria-hidden="true"></div>
+            <div className="stock-panel-glow" aria-hidden="true"></div>
 
-      <div className="stock-info-row">
+            <div className="stock-info-row">
 
-        <div className="stock-icon">
-          <span className="icon-doc"></span>
+              <div className="stock-icon">
+                <span className="icon-doc"></span>
+              </div>
+
+              <p>
+                You choose from our approved product list. Our banking partner settles
+                the invoice with us up front, so your shelves fill immediately. You then
+                repay from sales, on an agreed schedule, as the stock moves.
+              </p>
+
+            </div>
+
+            <div className="stock-divider"></div>
+
+            <div className="stock-info-row">
+
+              <div className="stock-icon">
+                <span className="icon-shield"></span>
+              </div>
+
+              <p>
+                No large cash outlay at the start. No hunting for suppliers. No buying at
+                retail price and hoping to make a margin.
+              </p>
+
+            </div>
+
+            <Link className="btn on-night stock-btn" to="/stock">
+              See how it works <span className="arrow">→</span>
+            </Link>
+
+          </div>
+
         </div>
 
-        <p>
-          You choose from our approved product list. Our banking partner settles
-          the invoice with us up front, so your shelves fill immediately. You then
-          repay from sales, on an agreed schedule, as the stock moves.
-        </p>
+      </section>
 
-      </div>
-
-
-      <div className="stock-divider"></div>
-
-
-      <div className="stock-info-row">
-
-        <div className="stock-icon">
-          <span className="icon-shield"></span>
-        </div>
-
-        <p>
-          No large cash outlay at the start. No hunting for suppliers. No buying at
-          retail price and hoping to make a margin.
-        </p>
-
-      </div>
-
-
-      <Link className="btn on-night stock-btn" to="/stock">
-        See how it works <span className="arrow">→</span>
-      </Link>
-
-    </div>
-
-  </div>
-
-</section>
 
       {/* FRANCHISE */}
-<section className="band shell franchise-section">
+      <section className="band shell franchise-section">
 
-  <div className="franchise-dots" aria-hidden="true"></div>
+        <div className="franchise-dots" aria-hidden="true"></div>
 
-  <div className="franchise-layout">
+        <div className="franchise-layout">
 
-    <div className="franchise-copy">
+          <div className="franchise-copy">
 
-      <span className="label">
-        Franchise
-      </span>
+            <span className="franchise-copy-line" aria-hidden="true"></span>
 
-      <span className="franchise-copy-line" aria-hidden="true"></span>
+            <h2 className="display">
+              Run the store. We run everything behind it.
+            </h2>
 
-      <h2 className="display">
-        Run the store. We run everything behind it.
-      </h2>
-
-    </div>
+          </div>
 
 
-    <div className="franchise-panel">
+          <div className="franchise-panel">
 
-      <div className="body-col">
+            <div className="body-col">
 
-        <p>
-          A franchise gives you a proven store format, a supply chain that is already
-          moving, staff training, retail systems and a brand customers recognise. You
-          bring the site, the capital and the commitment to run it properly.
-        </p>
+              <p>
+                A franchise gives you a proven store format, a supply chain that is already
+                moving, staff training, retail systems and a brand customers recognise. You
+                bring the site, the capital and the commitment to run it properly.
+              </p>
 
-        <div className="franchise-divider" aria-hidden="true"></div>
+              <div className="franchise-divider" aria-hidden="true"></div>
 
-        <div className="btn-row">
-          <Link className="btn" to="/franchise">
-            Apply for a franchise <span className="arrow">→</span>
-          </Link>
+              <div className="btn-row">
+                <Link className="btn" to="/franchise">
+                  Apply for a franchise <span className="arrow">→</span>
+                </Link>
+              </div>
+
+            </div>
+
+          </div>
+
         </div>
 
-      </div>
+      </section>
 
-    </div>
-
-  </div>
-
-</section>
 
       {/* PARTNERS */}
-<section className="band shell partners-section">
+      <section className="band shell partners-section">
 
-  <div className="partners-dots" aria-hidden="true"></div>
+        <div className="partners-dots" aria-hidden="true"></div>
 
-  <div className="partners-layout">
+        <div className="partners-layout">
 
-    <div className="partners-copy">
+          <div className="partners-copy">
 
-      <span className="label">
-        Suppliers, brands and banks
-      </span>
+            <h2 className="display">
+              Our shelf is a route to market.
+            </h2>
 
-      <h2 className="display">
-        Our shelf is a route to market.
-      </h2>
+            <span className="partners-copy-line" aria-hidden="true"></span>
 
-      <span className="partners-copy-line" aria-hidden="true"></span>
-
-    </div>
+          </div>
 
 
-    <div className="partners-panel">
+          <div className="partners-panel">
 
-      <div className="body-col">
+            <div className="body-col">
 
-        <p>
-          For a producer or a brand, All Hours is distribution and visibility in one
-          move. For a bank, it is a lending book with real inventory behind it and a
-          repayment stream tied to daily sales.
-        </p>
+              <p>
+                For a producer or a brand, All Hours is distribution and visibility in one
+                move. For a bank, it is a lending book with real inventory behind it and a
+                repayment stream tied to daily sales.
+              </p>
 
-        <p>
-          Our grocery range is sourced through a vetted agricultural supply network,
-          which shortens the chain between farm and shelf and keeps quality
-          traceable.
-        </p>
+              <p>
+                Our grocery range is sourced through a vetted agricultural supply network,
+                which shortens the chain between farm and shelf and keeps quality
+                traceable.
+              </p>
 
-        <div className="partners-divider" aria-hidden="true"></div>
+              <div className="partners-divider" aria-hidden="true"></div>
 
-        <div className="btn-row">
-          <Link className="btn" to="/partners">
-            Partner with us <span className="arrow">→</span>
-          </Link>
+              <div className="btn-row">
+                <Link className="btn" to="/partners">
+                  Partner with us <span className="arrow">→</span>
+                </Link>
+              </div>
+
+            </div>
+
+          </div>
+
         </div>
 
-      </div>
+      </section>
 
-    </div>
 
-  </div>
+      {/* NUMBERS */}
+      <section className="band shell numbers-section">
 
-</section>
+        <div className="numbers-orbit numbers-orbit-one" aria-hidden="true"></div>
+        <div className="numbers-orbit numbers-orbit-two" aria-hidden="true"></div>
 
-     {/* NUMBERS */}
-<section className="band shell numbers-section">
+        <div className="proof">
 
-  <div className="numbers-orbit numbers-orbit-one" aria-hidden="true"></div>
-  <div className="numbers-orbit numbers-orbit-two" aria-hidden="true"></div>
+          <div className="proof-card">
+            <span className="proof-line" aria-hidden="true"></span>
+            <span className="n">120</span>
+            <span className="t">Stores trading and in development</span>
+            <span className="proof-shine" aria-hidden="true"></span>
+          </div>
 
-  <div className="proof">
+          <div className="proof-card">
+            <span className="proof-line" aria-hidden="true"></span>
+            <span className="n">1,400</span>
+            <span className="t">Independent shops on the stock supply scheme</span>
+            <span className="proof-shine" aria-hidden="true"></span>
+          </div>
 
-    <div className="proof-card">
-      <span className="proof-line" aria-hidden="true"></span>
-      <span className="n">120</span>
-      <span className="t">Stores trading and in development</span>
-      <span className="proof-shine" aria-hidden="true"></span>
-    </div>
+          <div className="proof-card">
+            <span className="proof-line" aria-hidden="true"></span>
+            <span className="n">6</span>
+            <span className="t">Markets we operate in</span>
+            <span className="proof-shine" aria-hidden="true"></span>
+          </div>
 
-    <div className="proof-card">
-      <span className="proof-line" aria-hidden="true"></span>
-      <span className="n">1,400</span>
-      <span className="t">Independent shops on the stock supply scheme</span>
-      <span className="proof-shine" aria-hidden="true"></span>
-    </div>
+          <div className="proof-card">
+            <span className="proof-line" aria-hidden="true"></span>
+            <span className="n">18hrs</span>
+            <span className="t">Average daily trading window</span>
+            <span className="proof-shine" aria-hidden="true"></span>
+          </div>
 
-    <div className="proof-card">
-      <span className="proof-line" aria-hidden="true"></span>
-      <span className="n">6</span>
-      <span className="t">Markets we operate in</span>
-      <span className="proof-shine" aria-hidden="true"></span>
-    </div>
+        </div>
 
-    <div className="proof-card">
-      <span className="proof-line" aria-hidden="true"></span>
-      <span className="n">18hrs</span>
-      <span className="t">Average daily trading window</span>
-      <span className="proof-shine" aria-hidden="true"></span>
-    </div>
+      </section>
 
-  </div>
-
-</section>
 
       {/* ENQUIRY */}
-<section className="band shell enquiry-section">
+      <section className="band shell enquiry-section">
 
-  <div className="enquiry-orbit" aria-hidden="true"></div>
-  <div className="enquiry-dots" aria-hidden="true"></div>
+        <div className="enquiry-orbit" aria-hidden="true"></div>
+        <div className="enquiry-dots" aria-hidden="true"></div>
 
-  <div className="enquiry-layout">
+        <div className="enquiry-layout">
 
-    <div className="enquiry-copy">
+          <div className="enquiry-copy">
 
-      <span className="label">Enquiries</span>
+            <span className="enquiry-line" aria-hidden="true"></span>
 
-      <span className="enquiry-line" aria-hidden="true"></span>
+            <h2 className="display">
+              Tell us what you need.
+            </h2>
 
-      <h2 className="display">
-        Tell us what you need.
-      </h2>
+            <p className="enquiry-lede">
+              Send this and someone from our team replies within two working days.
+            </p>
 
-      <p className="enquiry-lede">
-        Send this and someone from our team replies within two working days.
-      </p>
-
-    </div>
-
-
-    <div className="form-wrap">
-
-      <div className="form-glow" aria-hidden="true"></div>
-
-      <form className="js-form">
-
-        <div className="fgrid">
-
-          <div className="field">
-            <label>Name</label>
-            <input type="text" name="name" required />
           </div>
 
-          <div className="field">
-            <label>Business name</label>
-            <input type="text" name="business" />
-          </div>
 
-          <div className="field">
-            <label>Email</label>
-            <input type="email" name="email" required />
-          </div>
+          <div className="form-wrap">
 
-          <div className="field">
-            <label>Phone</label>
-            <input type="tel" name="phone" />
-          </div>
+            <div className="form-glow" aria-hidden="true"></div>
 
-          <div className="field">
-            <label>City and country</label>
-            <input type="text" name="location" />
-          </div>
+            <form className="js-form">
 
-          <div className="field">
-            <label>What is this about</label>
+              <div className="fgrid">
 
-            <select name="subject">
-              <option>Stock supply for my shop</option>
-            </select>
-          </div>
+                <div className="field">
+                  <label>Name</label>
+                  <input type="text" name="name" required />
+                </div>
 
-          <div className="field full">
-            <label>Tell us a little more</label>
-            <textarea name="message"></textarea>
+                <div className="field">
+                  <label>Business name</label>
+                  <input type="text" name="business" />
+                </div>
+
+                <div className="field">
+                  <label>Email</label>
+                  <input type="email" name="email" required />
+                </div>
+
+                <div className="field">
+                  <label>Phone</label>
+                  <input type="tel" name="phone" />
+                </div>
+
+                <div className="field">
+                  <label>City and country</label>
+                  <input type="text" name="location" />
+                </div>
+
+                <div className="field">
+                  <label>What is this about</label>
+
+                  <select name="subject">
+                    <option>Stock supply for my shop</option>
+                  </select>
+                </div>
+
+                <div className="field full">
+                  <label>Tell us a little more</label>
+                  <textarea name="message"></textarea>
+                </div>
+
+              </div>
+
+              <div className="enquiry-submit">
+
+                <button className="btn enquiry-btn" type="submit">
+                  Send enquiry <span className="arrow">→</span>
+                </button>
+
+                <p className="fnote">
+                  We reply within two working days.
+                </p>
+
+              </div>
+
+            </form>
+
           </div>
 
         </div>
 
-        <div className="enquiry-submit">
-
-          <button className="btn enquiry-btn" type="submit">
-            Send enquiry <span className="arrow">→</span>
-          </button>
-
-          <p className="fnote">
-            We reply within two working days.
-          </p>
-
-        </div>
-
-      </form>
-
-    </div>
-
-  </div>
-
-</section>
+      </section>
 
     </div>
   );

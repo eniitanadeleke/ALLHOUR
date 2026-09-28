@@ -1,5 +1,6 @@
 import './Footer.css';
 import { Link } from 'react-router-dom';
+import logo from '../assets/all-hours-navy-white-logo.png';
 
 export default function Footer() {
   return (
@@ -48,7 +49,10 @@ export default function Footer() {
 
           <div className="fcols">
 
-            <div className="footer-col">
+            <div className="footer-col footer-brand-col">
+              <Link className="footer-brand" to="/" aria-label="All Hours home">
+                <img src={logo} alt="All Hours" />
+              </Link>
               <h5>All Hours</h5>
               <span className="footer-heading-line" aria-hidden="true"></span>
 

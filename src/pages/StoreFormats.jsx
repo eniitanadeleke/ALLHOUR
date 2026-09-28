@@ -11,7 +11,6 @@ export default function StoreFormats() {
 
         <div className="hero-grid formats-hero-grid">
           <div className="formats-hero-copy">
-            <span className="label">Store formats</span>
             <span className="formats-label-line" aria-hidden="true"></span>
             <h1 className="display">Six formats, sized to the street they sit on.</h1>
           </div>
@@ -138,7 +137,6 @@ export default function StoreFormats() {
 
         <div className="shell formats-faq-layout">
           <div className="formats-faq-title">
-            <span className="label">Questions</span>
             <span className="formats-label-line" aria-hidden="true"></span>
             <h2 className="display">What people ask about the formats.</h2>
           </div>

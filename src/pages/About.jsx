@@ -11,7 +11,6 @@ export default function About() {
 
         <div className="hero-grid about-hero-grid">
           <div className="about-hero-copy">
-            <span className="label">About</span>
             <span className="about-label-line" aria-hidden="true"></span>
             <h1 className="display">Retail that shows up, every day, at a price people can meet.</h1>
           </div>
@@ -32,7 +31,6 @@ export default function About() {
       <section className="band shell about-why">
         <div className="split about-split">
           <div className="about-section-title">
-            <span className="label">Why we exist</span>
             <span className="about-label-line" aria-hidden="true"></span>
             <h2 className="display">Shopping is the one thing everybody does.</h2>
           </div>
@@ -79,7 +77,6 @@ export default function About() {
       {/* VALUES */}
       <section className="band shell values-section">
         <div className="head-block values-head">
-          <span className="label">Our values</span>
           <span className="about-label-line" aria-hidden="true"></span>
           <h2 className="display">Our name is the list.</h2>
           <p>Eight values, one for each letter. They decide what we do, how we do it, and why.</p>
@@ -146,7 +143,6 @@ export default function About() {
 
         <div className="shell">
           <div className="head-block operate-head">
-            <span className="label">How we operate</span>
             <span className="operate-line" aria-hidden="true"></span>
             <h2 className="display">Built on best practice, adapted to the street.</h2>
           </div>
@@ -181,7 +177,6 @@ export default function About() {
         <div className="shell split company-grid">
 
           <div className="company-copy">
-            <span className="label">Company</span>
             <span className="about-label-line" aria-hidden="true"></span>
             <h2 className="display">The details.</h2>
           </div>

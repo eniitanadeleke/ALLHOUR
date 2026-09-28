@@ -13,7 +13,6 @@ export default function Franchise() {
 
         <div className="hero-grid fr-hero-grid">
           <div className="fr-hero-copy">
-            <span className="label">Franchise</span>
             <span className="fr-label-line" aria-hidden="true"></span>
 
             <h1 className="display">
@@ -50,7 +49,6 @@ export default function Franchise() {
       {/* WHAT YOU GET */}
       <section className="band shell fr-benefits">
         <div className="head-block fr-section-head">
-          <span className="label">What you get</span>
           <span className="fr-label-line" aria-hidden="true"></span>
 
           <h2 className="display">
@@ -111,7 +109,6 @@ export default function Franchise() {
 
         <div className="shell">
           <div className="head-block fr-criteria-head">
-            <span className="label">What we look for</span>
             <span className="fr-night-line" aria-hidden="true"></span>
 
             <h2 className="display">
@@ -178,7 +175,6 @@ export default function Franchise() {
 
         <div className="fr-process-layout">
           <div className="fr-process-copy">
-            <span className="label">The process</span>
             <span className="fr-label-line" aria-hidden="true"></span>
 
             <h2 className="display">
@@ -261,7 +257,6 @@ export default function Franchise() {
 
         <div className="shell fr-apply-layout">
           <div className="fr-apply-copy">
-            <span className="label">Apply</span>
             <span className="fr-label-line" aria-hidden="true"></span>
 
             <h2 className="display">

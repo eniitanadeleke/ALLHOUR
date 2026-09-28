@@ -269,3 +269,94 @@ ul.plain li::marker{color:var(--sun);}
 .view{display:block;}
 .page-shell{min-height:60vh;}
 
+
+/* ============================================================
+   MOBILE POLISH
+   Keeps the existing desktop identity, while tightening type,
+   spacing, cards and forms on smaller screens.
+   ============================================================ */
+@media(max-width:720px){
+  body{font-size:15.5px;line-height:1.58;overflow-x:hidden}
+  .shell{padding-left:20px;padding-right:20px}
+  .band{padding-top:68px;padding-bottom:68px}
+  h1.display{font-size:clamp(2.55rem,11.5vw,3.75rem);line-height:.98;letter-spacing:-.035em}
+  h2.display{font-size:clamp(2.15rem,9.5vw,3.15rem);line-height:1.02;letter-spacing:-.03em}
+  h3.display{font-size:clamp(1.7rem,7.5vw,2.35rem);line-height:1.06}
+  .lede{font-size:1.05rem;line-height:1.55}
+  .split{gap:38px}
+  .head-block{margin-bottom:34px}
+  .g2,.g3,.g4{grid-template-columns:1fr;gap:16px}
+  .card{padding:22px 20px;border-radius:8px}
+  .card h4{font-size:1.18rem}
+  .card p,.card ul,.item p,ul.plain{font-size:14.5px}
+  .item{padding-top:16px}
+  .btn-row{margin-top:24px}
+  .btn{min-height:48px;padding:12px 19px}
+  .form-wrap{padding:22px 18px;border-radius:8px}
+  .fgrid{grid-template-columns:1fr;gap:14px}
+  .field.full{grid-column:auto}
+  .field input,.field select,.field textarea{font-size:16px;padding:12px}
+  .spec li{grid-template-columns:1fr;gap:4px;padding:12px 0}
+  .spec .v{text-align:left}
+  .plate.wide{aspect-ratio:4/3}
+  .faq summary{font-size:15.5px;padding:17px 38px 17px 0}
+  .faq .ans{font-size:14.5px;padding-right:22px}
+}
+@media(max-width:420px){
+  .shell{padding-left:17px;padding-right:17px}
+  .band{padding-top:58px;padding-bottom:58px}
+  h1.display{font-size:clamp(2.35rem,11vw,3rem)}
+  h2.display{font-size:clamp(2rem,9vw,2.6rem)}
+  .label{font-size:10px;letter-spacing:.12em;margin-bottom:14px}
+  .card{padding:20px 17px}
+}
+
+/* Page-specific mobile heading cap. Several pages intentionally use very
+   large editorial desktop type, but it should not dominate a phone screen. */
+@media(max-width:720px){
+  .page-home .hero .display,
+  .page-home .intro-section .display,
+  .page-home .head-block .display,
+  .page-home .night .display,
+  .page-home .franchise-copy .display,
+  .page-home .partners-copy .display,
+  .page-home .enquiry-copy .display,
+  .page-about .about-hero-copy .display,
+  .page-about .about-section-title .display,
+  .page-about .values-head .display,
+  .page-about .operate-head .display,
+  .page-about .company-copy .display,
+  .page-formats .formats-hero .display,
+  .page-formats .formats-faq-title .display,
+  .page-stock .stock-hero .display,
+  .page-stock .stock-process-head .display,
+  .page-stock .stock-benefits-copy .display,
+  .page-stock .stock-audience-copy .display,
+  .page-franchise .fr-hero-copy .display,
+  .page-franchise .fr-section-head .display,
+  .page-franchise .fr-criteria-head .display,
+  .page-franchise .fr-process-copy .display,
+  .page-franchise .fr-apply-copy .display,
+  .page-services .sv-hero-copy .display,
+  .page-services .sv-title .display,
+  .page-partners .pt-hero-copy .display,
+  .page-partners .pt-network-copy .display,
+  .page-partners .pt-contact-copy .display,
+  .page-contact .ct-hero-copy .display,
+  .page-contact .ct-message-copy .display{
+    font-size:clamp(2.45rem,10.5vw,3.65rem)!important;
+    line-height:1!important;
+    letter-spacing:-.035em!important;
+  }
+}
+
+/* Shared interaction polish */
+.page-shell .card,.page-shell .item,.page-shell .form-wrap,.page-shell .plate{transition:transform .32s ease,box-shadow .32s ease,border-color .32s ease}
+.page-shell .card:hover,.page-shell .item:hover{transform:translateY(-4px)}
+.page-shell .btn,.page-shell .tlink{transition:transform .25s ease,box-shadow .25s ease,opacity .25s ease}
+.page-shell .btn:hover{transform:translateY(-2px)}
+.page-shell .tlink .arrow,.page-shell .btn .arrow{display:inline-block;transition:transform .25s ease}
+.page-shell .tlink:hover .arrow,.page-shell .btn:hover .arrow{transform:translateX(4px)}
+.page-shell input,.page-shell select,.page-shell textarea{transition:border-color .22s ease,box-shadow .22s ease,background-color .22s ease}
+.page-shell input:focus,.page-shell select:focus,.page-shell textarea:focus{outline:none;box-shadow:0 0 0 3px rgba(196,124,24,.10)}
+@media(prefers-reduced-motion:reduce){.page-shell .card,.page-shell .item,.page-shell .form-wrap,.page-shell .plate,.page-shell .btn,.page-shell .tlink,.page-shell .tlink .arrow,.page-shell .btn .arrow,.page-shell input,.page-shell select,.page-shell textarea{transition:none}.page-shell .card:hover,.page-shell .item:hover,.page-shell .btn:hover{transform:none}}

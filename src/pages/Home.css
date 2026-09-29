@@ -982,3 +982,48 @@ to{opacity:1;transform:translateY(0)}
 .page-home .proof>div{border-right:0;border-bottom:1px solid rgba(255,255,255,.12)}
 .page-home .proof>div:last-child{border-bottom:0}
 }
+/* MOBILE HERO VISIBILITY FIX - 2026-09-29
+   Keeps the premium dark hero while ensuring decorative/background layers
+   never overpower the content on smaller screens. */
+@media(max-width:720px){
+  .page-home .hero{
+    isolation:isolate;
+    background:linear-gradient(160deg,#0b1429 0%,#0d1730 55%,#091226 100%);
+  }
+  .page-home .hero::before{
+    z-index:0;
+    opacity:.32;
+  }
+  .page-home .hero::after{
+    z-index:0;
+    opacity:.18;
+  }
+  .page-home .hero-orb{z-index:1;opacity:.72}
+  .page-home .hero-grid{z-index:2}
+  .page-home .hero-copy,.page-home .hero-content{z-index:3}
+  .page-home .hero .display{
+    color:#f7f1e7!important;
+    text-shadow:0 8px 28px rgba(0,0,0,.16);
+  }
+  .page-home .hero-copy::after{opacity:.12}
+  .page-home .hero-line{background:linear-gradient(90deg,#d59225,rgba(213,146,37,.15))}
+  .page-home .hero-glass{
+    border-color:rgba(255,255,255,.72);
+    background:linear-gradient(145deg,rgba(250,247,241,.96),rgba(240,238,234,.90));
+    backdrop-filter:blur(10px) saturate(105%);
+    -webkit-backdrop-filter:blur(10px) saturate(105%);
+    box-shadow:0 20px 50px rgba(0,0,0,.18),inset 0 1px 0 rgba(255,255,255,.92);
+  }
+  .page-home .hero .lede{color:#34425d}
+  .page-home .btn.ghost{
+    background:rgba(255,255,255,.72);
+    border-color:rgba(17,26,51,.18);
+    color:#111a33;
+  }
+  .page-home .hero-spine{
+    border-color:rgba(255,255,255,.16);
+    background:rgba(255,255,255,.06);
+  }
+  .page-home .spine-key{color:rgba(255,255,255,.62)}
+  .page-home .spine-key b{color:#fff}
+}

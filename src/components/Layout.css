@@ -360,3 +360,115 @@ ul.plain li::marker{color:var(--sun);}
 .page-shell input,.page-shell select,.page-shell textarea{transition:border-color .22s ease,box-shadow .22s ease,background-color .22s ease}
 .page-shell input:focus,.page-shell select:focus,.page-shell textarea:focus{outline:none;box-shadow:0 0 0 3px rgba(196,124,24,.10)}
 @media(prefers-reduced-motion:reduce){.page-shell .card,.page-shell .item,.page-shell .form-wrap,.page-shell .plate,.page-shell .btn,.page-shell .tlink,.page-shell .tlink .arrow,.page-shell .btn .arrow,.page-shell input,.page-shell select,.page-shell textarea{transition:none}.page-shell .card:hover,.page-shell .item:hover,.page-shell .btn:hover{transform:none}}
+
+/* ============================================================
+   SITE-WIDE READABILITY PASS
+   Keeps the existing design intact while improving text contrast
+   on dark, coloured and image-backed sections, especially mobile.
+   ============================================================ */
+
+/* Dark / coloured sections: keep typography clearly above the background. */
+.page-home .stock-section,
+.page-home .numbers-section,
+.page-about .operate-section,
+.page-franchise .fr-criteria,
+.page-partners .pt-network,
+.page-stock .stock-benefits,
+.page-formats .formats-faq-section,
+.page-services .sv-franchise,
+.page-services .sv-digital,
+.page-services .sv-finance,
+.page-services .sv-development{isolation:isolate}
+
+.page-home .stock-section .display,
+.page-home .numbers-section .display,
+.page-about .operate-section .display,
+.page-franchise .fr-criteria .display,
+.page-partners .pt-network .display,
+.page-stock .stock-benefits .display,
+.page-formats .formats-faq-section .display,
+.page-services .sv-franchise .sv-title,
+.page-services .sv-digital .sv-title,
+.page-services .sv-finance .sv-title,
+.page-services .sv-development .sv-title{color:#fffaf1!important;text-shadow:0 2px 18px rgba(0,0,0,.2)}
+
+.page-home .stock-section p,
+.page-home .numbers-section p,
+.page-about .operate-section p,
+.page-franchise .fr-criteria p,
+.page-partners .pt-network p,
+.page-stock .stock-benefits p,
+.page-formats .formats-faq-section p,
+.page-services .sv-franchise .sv-body,
+.page-services .sv-digital .sv-body,
+.page-services .sv-finance .sv-body,
+.page-services .sv-development .sv-body{color:rgba(255,255,255,.91)!important}
+
+.page-about .operate-card,
+.page-franchise .fr-criteria-card,
+.page-partners .pt-network-callout,
+.page-stock .benefit-callout{background:rgba(255,255,255,.075)!important;border-color:rgba(255,255,255,.16)!important}
+
+.page-formats .formats-faq-section .faq details{border-color:rgba(255,255,255,.17)!important}
+.page-formats .formats-faq-section .faq summary{color:#fffaf2!important}
+.page-formats .formats-faq-section .faq .ans p{color:rgba(255,255,255,.88)!important}
+
+/* Text that sits directly on photography gets a controlled backing layer. */
+.page-home .hero-photo .cap,
+.page-about .about-photo .cap,
+.page-franchise .fr-hero-photo .cap{color:#fff!important;background:linear-gradient(90deg,rgba(5,14,31,.82),rgba(5,14,31,.5) 72%,transparent)!important;text-shadow:0 1px 8px rgba(0,0,0,.35)}
+
+@media(max-width:760px){
+  /* Mobile needs stronger contrast because decorative layers occupy more of the viewport. */
+  .page-home .stock-section,
+  .page-home .numbers-section,
+  .page-about .operate-section,
+  .page-franchise .fr-criteria,
+  .page-partners .pt-network,
+  .page-stock .stock-benefits,
+  .page-formats .formats-faq-section{
+    background-blend-mode:normal!important;
+  }
+
+  .page-home .stock-section p,
+  .page-home .numbers-section p,
+  .page-about .operate-section p,
+  .page-franchise .fr-criteria p,
+  .page-partners .pt-network p,
+  .page-stock .stock-benefits p,
+  .page-formats .formats-faq-section p,
+  .page-services .sv-body{font-size:max(14px,inherit);line-height:1.72;color:rgba(255,255,255,.94)!important}
+
+  .page-about .operate-card,
+  .page-franchise .fr-criteria-card,
+  .page-partners .pt-network-callout,
+  .page-stock .benefit-callout{
+    background:rgba(255,255,255,.105)!important;
+    border-color:rgba(255,255,255,.2)!important;
+    backdrop-filter:blur(10px);
+    -webkit-backdrop-filter:blur(10px);
+  }
+
+  .page-home .proof-card{background:rgba(255,255,255,.075)!important;border-color:rgba(255,255,255,.14)!important}
+  .page-home .proof .t{color:rgba(255,255,255,.92)!important}
+
+  .page-home .hero-photo .cap,
+  .page-about .about-photo .cap,
+  .page-franchise .fr-hero-photo .cap{
+    left:14px!important;
+    right:14px!important;
+    bottom:14px!important;
+    max-width:none!important;
+    padding:12px 14px!important;
+    background:rgba(5,14,31,.78)!important;
+    border-left:2px solid #d99a32!important;
+    backdrop-filter:blur(8px);
+    -webkit-backdrop-filter:blur(8px);
+  }
+
+  /* Coloured service bands retain their colours but use fully legible copy. */
+  .page-services .sv-franchise .sv-body,
+  .page-services .sv-digital .sv-body,
+  .page-services .sv-finance .sv-body,
+  .page-services .sv-development .sv-body{color:#fff!important;text-shadow:0 1px 10px rgba(0,0,0,.12)}
+}

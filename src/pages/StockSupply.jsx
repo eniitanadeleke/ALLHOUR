@@ -1,4 +1,5 @@
 import './StockSupply.css';
+import stockPhoto from '../assets/photos/stock-shop-owner.jpg';
 import { Link } from 'react-router-dom';
 
 export default function StockSupply() {
@@ -43,9 +44,7 @@ export default function StockSupply() {
           <span className="stock-photo-inner" aria-hidden="true"></span>
           <span className="stock-photo-glow" aria-hidden="true"></span>
 
-          <span className="cap">
-            <b>Photograph</b> · Independent shop owner in front of a full shelf, All Hours delivery crate visible
-          </span>
+          <img className="plate-photo" src={stockPhoto} alt="An independent shop owner at her counter in front of fully stocked shelves" />
         </div>
       </section>
 

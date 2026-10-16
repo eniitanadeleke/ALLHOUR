@@ -5,6 +5,7 @@
    Day is marigold. Night is indigo. That is the whole idea.
    ============================================================ */
 :root{
+  color-scheme:only light;
   --ground:#ECEFF4;
   --paper:#F8F9FB;
   --sunk:#E1E5EC;
@@ -26,55 +27,8 @@
   --nav-bg:rgba(236,239,244,.9);
   --shadow:0 1px 2px rgba(19,26,51,.05), 0 20px 44px -34px rgba(19,26,51,.4);
 }
-@media (prefers-color-scheme: dark){
-  :root:not([data-theme="light"]){
-    --ground:#0C1020;
-    --paper:#141A2E;
-    --sunk:#101527;
-    --ink:#E7EAF2;
-    --ink-2:#A3ACC6;
-    --ink-3:#78829E;
-    --line:#242C48;
-    --line-2:#1B2138;
-    --sun:#E0A32E;
-    --sun-2:#EFBB55;
-    --night:#161C33;
-    --on-night:#E7EAF2;
-    --on-night-2:#98A2BE;
-    --night-line:#2B3457;
-    --plate-a:#1B2238;
-    --plate-b:#121728;
-    --plate-hl:rgba(255,255,255,.06);
-    --on-sun:#131A33;
-    --nav-bg:rgba(12,16,32,.9);
-    --shadow:0 1px 2px rgba(0,0,0,.5), 0 20px 44px -34px rgba(0,0,0,.9);
-  }
-}
-:root[data-theme="dark"]{
-  --ground:#0C1020;
-  --paper:#141A2E;
-  --sunk:#101527;
-  --ink:#E7EAF2;
-  --ink-2:#A3ACC6;
-  --ink-3:#78829E;
-  --line:#242C48;
-  --line-2:#1B2138;
-  --sun:#E0A32E;
-  --sun-2:#EFBB55;
-  --night:#161C33;
-  --on-night:#E7EAF2;
-  --on-night-2:#98A2BE;
-  --night-line:#2B3457;
-  --plate-a:#1B2238;
-  --plate-b:#121728;
-  --plate-hl:rgba(255,255,255,.06);
-  --on-sun:#131A33;
-  --nav-bg:rgba(12,16,32,.9);
-  --shadow:0 1px 2px rgba(0,0,0,.5), 0 20px 44px -34px rgba(0,0,0,.9);
-}
-
 *{box-sizing:border-box;}
-html{scroll-behavior:smooth;}
+html{scroll-behavior:smooth;color-scheme:only light;background:#ECEFF4;}
 body{
   margin:0;
   background:var(--ground);
@@ -472,3 +426,7 @@ ul.plain li::marker{color:var(--sun);}
   .page-services .sv-finance .sv-body,
   .page-services .sv-development .sv-body{color:#fff!important;text-shadow:0 1px 10px rgba(0,0,0,.12)}
 }
+
+/* Photographs inside image plates */
+.plate{position:relative;overflow:hidden}
+.plate > .plate-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;display:block;z-index:0}

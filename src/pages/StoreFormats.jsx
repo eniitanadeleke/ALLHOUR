@@ -1,4 +1,10 @@
 import './StoreFormats.css';
+import groceryPhoto from '../assets/photos/format-grocery.jpg';
+import pharmacyPhoto from '../assets/photos/format-pharmacy.jpg';
+import hyperPhoto from '../assets/photos/format-hypermarket.jpg';
+import minimartPhoto from '../assets/photos/format-minimart.jpg';
+import neighbourPhoto from '../assets/photos/format-neighbourhood.jpg';
+import mallPhoto from '../assets/photos/format-mall.jpg';
 
 export default function StoreFormats() {
   return (
@@ -35,7 +41,7 @@ export default function StoreFormats() {
           <article className="fmt">
             <div className="plate strip">
               <span className="plate-glow" aria-hidden="true"></span>
-              <span className="cap"><b>Photograph</b> · Grocery aisle with fresh produce, customer choosing</span>
+              <img className="plate-photo" src={groceryPhoto} alt="A shopper choosing fresh pineapple in the produce aisle" loading="lazy" />
             </div>
             <div className="fbody">
               <span className="ftag">Format 01</span>
@@ -51,7 +57,7 @@ export default function StoreFormats() {
           <article className="fmt">
             <div className="plate strip">
               <span className="plate-glow" aria-hidden="true"></span>
-              <span className="cap"><b>Photograph</b> · Pharmacy counter, pharmacist serving a customer</span>
+              <img className="plate-photo" src={pharmacyPhoto} alt="A pharmacist helping a customer choose a product" loading="lazy" />
             </div>
             <div className="fbody">
               <span className="ftag">Format 02</span>
@@ -67,7 +73,7 @@ export default function StoreFormats() {
           <article className="fmt">
             <div className="plate strip">
               <span className="plate-glow" aria-hidden="true"></span>
-              <span className="cap"><b>Photograph</b> · Hypermarket floor, trolleys and bulk pallets</span>
+              <img className="plate-photo" src={hyperPhoto} alt="Two shoppers with a trolley in a well-stocked supermarket aisle" loading="lazy" />
             </div>
             <div className="fbody">
               <span className="ftag">Format 03</span>
@@ -83,7 +89,7 @@ export default function StoreFormats() {
           <article className="fmt">
             <div className="plate strip">
               <span className="plate-glow" aria-hidden="true"></span>
-              <span className="cap"><b>Photograph</b> · Mini mart at a fuel station, evening, lit</span>
+              <img className="plate-photo" src={minimartPhoto} alt="A shopper picking an item from the shelves of a mini mart" loading="lazy" />
             </div>
             <div className="fbody">
               <span className="ftag">Format 04</span>
@@ -99,7 +105,7 @@ export default function StoreFormats() {
           <article className="fmt">
             <div className="plate strip">
               <span className="plate-glow" aria-hidden="true"></span>
-              <span className="cap"><b>Photograph</b> · Neighbourhood store frontage on a residential road</span>
+              <img className="plate-photo" src={neighbourPhoto} alt="A shopkeeper arranging goods at a neighbourhood store" loading="lazy" />
             </div>
             <div className="fbody">
               <span className="ftag">Format 05</span>
@@ -115,7 +121,7 @@ export default function StoreFormats() {
           <article className="fmt">
             <div className="plate strip">
               <span className="plate-glow" aria-hidden="true"></span>
-              <span className="cap"><b>Photograph</b> · Mall concourse, daylight through the roof, shoppers</span>
+              <img className="plate-photo" src={mallPhoto} alt="Shoppers with bags walking outside a shopping mall" loading="lazy" />
             </div>
             <div className="fbody">
               <span className="ftag">Format 06</span>

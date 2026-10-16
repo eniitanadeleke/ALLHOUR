@@ -1,5 +1,6 @@
 import './Footer.css';
 import { Link } from 'react-router-dom';
+import { EMAIL_INFO, EMAIL_CONTACT, FACEBOOK_URL } from '../contactInfo';
 import logo from '../assets/all-hours-navy-white-logo.png';
 
 export default function Footer() {
@@ -88,10 +89,9 @@ export default function Footer() {
               <h5>Reach us</h5>
               <span className="footer-heading-line" aria-hidden="true"></span>
 
-              <Link to="/contact">Phone to supply</Link>
-              <Link to="/contact">Email to supply</Link>
-              <Link to="/contact">WhatsApp</Link>
-              <Link to="/contact">Instagram · LinkedIn</Link>
+              <a href={`mailto:${EMAIL_INFO}`}>{EMAIL_INFO}</a>
+              <a href={`mailto:${EMAIL_CONTACT}`}>{EMAIL_CONTACT}</a>
+              <a href={FACEBOOK_URL} target="_blank" rel="noopener noreferrer">Facebook</a>
             </div>
 
           </div>

@@ -1,4 +1,5 @@
 import './Contact.css';
+import { EMAIL_INFO, EMAIL_CONTACT, FACEBOOK_URL } from '../contactInfo';
 
 export default function Contact() {
   return (
@@ -14,9 +15,6 @@ export default function Contact() {
           <div className="ct-hero-copy">
             <span className="ct-gold-rule" aria-hidden="true"></span>
 
-            <h1 className="display">
-              Call, message, or walk in.
-            </h1>
           </div>
 
           <div className="ct-hero-side">
@@ -60,13 +58,13 @@ export default function Contact() {
               </li>
 
               <li>
-                <span className="k">Phone</span>
-                <span className="v">To supply</span>
+                <span className="k">Email</span>
+                <span className="v"><a href={`mailto:${EMAIL_INFO}`}>{EMAIL_INFO}</a></span>
               </li>
 
               <li>
-                <span className="k">Email</span>
-                <span className="v">To supply</span>
+                <span className="k">Facebook</span>
+                <span className="v"><a href={FACEBOOK_URL} target="_blank" rel="noopener noreferrer">All Hours on Facebook</a></span>
               </li>
 
               <li>
@@ -90,18 +88,8 @@ export default function Contact() {
 
             <ul className="spec ct-spec">
               <li>
-                <span className="k">Phone</span>
-                <span className="v">To supply</span>
-              </li>
-
-              <li>
-                <span className="k">WhatsApp</span>
-                <span className="v">To supply</span>
-              </li>
-
-              <li>
                 <span className="k">Email</span>
-                <span className="v">To supply</span>
+                <span className="v"><a href={`mailto:${EMAIL_CONTACT}`}>{EMAIL_CONTACT}</a></span>
               </li>
             </ul>
           </article>
@@ -120,34 +108,12 @@ export default function Contact() {
 
             <ul className="spec ct-spec">
               <li>
-                <span className="k">Phone</span>
-                <span className="v">To supply</span>
-              </li>
-
-              <li>
                 <span className="k">Email</span>
-                <span className="v">To supply</span>
+                <span className="v"><a href={`mailto:${EMAIL_CONTACT}`}>{EMAIL_CONTACT}</a></span>
               </li>
             </ul>
           </article>
 
-        </div>
-
-
-        {/* MAP */}
-        <div className="plate wide ct-map">
-          <span className="ct-map-grid" aria-hidden="true"></span>
-
-          <span className="ct-map-ring ct-map-ring-one" aria-hidden="true"></span>
-          <span className="ct-map-ring ct-map-ring-two" aria-hidden="true"></span>
-
-          <span className="ct-map-pin" aria-hidden="true">
-            <span></span>
-          </span>
-
-          <span className="cap">
-            <b>Map</b> · Embed a map for each office once addresses are confirmed
-          </span>
         </div>
       </section>
 

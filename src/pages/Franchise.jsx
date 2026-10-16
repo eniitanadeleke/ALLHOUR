@@ -1,4 +1,5 @@
 import './Franchise.css';
+import franchisePhoto from '../assets/photos/franchise-owner-entrance.jpg';
 import { Link } from 'react-router-dom';
 
 export default function Franchise() {
@@ -39,9 +40,7 @@ export default function Franchise() {
           <span className="fr-photo-inner" aria-hidden="true"></span>
           <span className="fr-photo-line" aria-hidden="true"></span>
 
-          <span className="cap">
-            <b>Photograph</b> · Franchise holder at their store entrance on opening day
-          </span>
+          <img className="plate-photo" src={franchisePhoto} alt="A store owner at the counter of his own shop" />
         </div>
       </section>
 

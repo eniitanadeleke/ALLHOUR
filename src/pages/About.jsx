@@ -1,4 +1,5 @@
 import './About.css';
+import aboutPhoto from '../assets/photos/about-store-restocking.jpg';
 
 export default function About() {
   return (
@@ -22,7 +23,7 @@ export default function About() {
 
         <div className="plate wide about-photo">
           <span className="photo-frame" aria-hidden="true"></span>
-          <span className="cap"><b>Photograph</b> · Store interior mid morning, staff restocking, customers in frame</span>
+          <img className="plate-photo" src={aboutPhoto} alt="An All Hours team member restocking shelves inside a supermarket" loading="lazy" />
         </div>
       </section>
 

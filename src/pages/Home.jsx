@@ -107,15 +107,6 @@ export default function Home() {
 
           <div className="hero-photo-content">
 
-            <span className="cap">
-              <b>Photograph</b>
-
-              <span>
-                A busy All Hours store at dusk, lit inside, customers at the till
-                and the pharmacy counter visible
-              </span>
-            </span>
-
             <Link className="hero-photo-link" to="/about">
               Discover All Hours <span className="arrow">→</span>
             </Link>

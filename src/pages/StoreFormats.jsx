@@ -11,9 +11,9 @@ export default function StoreFormats() {
     <div className="view on page-shell page-formats" id="formats">
 
       <section className="hero shell formats-hero">
-        <span className="formats-orbit formats-orbit-one" aria-hidden="true"></span>
-        <span className="formats-orbit formats-orbit-two" aria-hidden="true"></span>
-        <span className="formats-dots" aria-hidden="true"></span>
+
+
+
 
         <div className="hero-grid formats-hero-grid">
           <div className="formats-hero-copy">
@@ -32,7 +32,7 @@ export default function StoreFormats() {
 
         <div className="callout formats-callout">
           <span className="callout-line" aria-hidden="true"></span>
-          <span className="callout-glow" aria-hidden="true"></span>
+
           <p><b>The standard store.</b> Supermarket plus pharmacy under one roof, one entrance, one queue if the customer wants it. Groceries and medicine are the two things people cannot postpone, so we put them in the same trip.</p>
         </div>
 
@@ -40,7 +40,7 @@ export default function StoreFormats() {
 
           <article className="fmt">
             <div className="plate strip">
-              <span className="plate-glow" aria-hidden="true"></span>
+
               <img className="plate-photo" src={groceryPhoto} alt="A shopper choosing fresh pineapple in the produce aisle" loading="lazy" />
             </div>
             <div className="fbody">
@@ -56,7 +56,7 @@ export default function StoreFormats() {
 
           <article className="fmt">
             <div className="plate strip">
-              <span className="plate-glow" aria-hidden="true"></span>
+
               <img className="plate-photo" src={pharmacyPhoto} alt="A pharmacist helping a customer choose a product" loading="lazy" />
             </div>
             <div className="fbody">
@@ -72,7 +72,7 @@ export default function StoreFormats() {
 
           <article className="fmt">
             <div className="plate strip">
-              <span className="plate-glow" aria-hidden="true"></span>
+
               <img className="plate-photo" src={hyperPhoto} alt="Two shoppers with a trolley in a well-stocked supermarket aisle" loading="lazy" />
             </div>
             <div className="fbody">
@@ -88,7 +88,7 @@ export default function StoreFormats() {
 
           <article className="fmt">
             <div className="plate strip">
-              <span className="plate-glow" aria-hidden="true"></span>
+
               <img className="plate-photo" src={minimartPhoto} alt="A shopper picking an item from the shelves of a mini mart" loading="lazy" />
             </div>
             <div className="fbody">
@@ -104,7 +104,7 @@ export default function StoreFormats() {
 
           <article className="fmt">
             <div className="plate strip">
-              <span className="plate-glow" aria-hidden="true"></span>
+
               <img className="plate-photo" src={neighbourPhoto} alt="A shopkeeper arranging goods at a neighbourhood store" loading="lazy" />
             </div>
             <div className="fbody">
@@ -120,7 +120,7 @@ export default function StoreFormats() {
 
           <article className="fmt">
             <div className="plate strip">
-              <span className="plate-glow" aria-hidden="true"></span>
+
               <img className="plate-photo" src={mallPhoto} alt="Shoppers with bags walking outside a shopping mall" loading="lazy" />
             </div>
             <div className="fbody">
@@ -138,8 +138,8 @@ export default function StoreFormats() {
       </section>
 
       <section className="band sunk formats-faq-section">
-        <span className="faq-orbit faq-orbit-one" aria-hidden="true"></span>
-        <span className="faq-orbit faq-orbit-two" aria-hidden="true"></span>
+
+
 
         <div className="shell formats-faq-layout">
           <div className="formats-faq-title">

@@ -1,6 +1,7 @@
 import './Home.css';
 import { Link } from 'react-router-dom';
 import HourSpine from '../components/HourSpine';
+import Icon from '../components/Icon';
 
 export default function Home() {
   return (
@@ -9,8 +10,8 @@ export default function Home() {
       {/* HERO SECTION */}
       <section className="hero shell">
 
-        <div className="hero-orb orb-one" aria-hidden="true"></div>
-        <div className="hero-orb orb-two" aria-hidden="true"></div>
+
+
 
         <div className="hero-grid">
 
@@ -27,7 +28,7 @@ export default function Home() {
 
           <div className="hero-content">
 
-            <div className="hero-glass">
+            <div className="hero-panel">
               <p className="lede">
                 We build and run retail that stays open, stays stocked and stays
                 close to the people who need it. Supermarkets, pharmacies,
@@ -36,7 +37,7 @@ export default function Home() {
 
               <div className="btn-row">
                 <Link className="btn" to="/stock">
-                  Stock your shop <span className="arrow">→</span>
+                  Stock your shop <span className="arrow"><Icon name="arrow-right" /></span>
                 </Link>
 
                 <Link className="btn ghost" to="/franchise">
@@ -53,7 +54,7 @@ export default function Home() {
         {/* 24 HOUR STRIP */}
         <div className="spine hero-spine" aria-hidden="true">
 
-          <div className="spine-glow"></div>
+
 
           <HourSpine />
 
@@ -79,36 +80,22 @@ export default function Home() {
 
           <div className="hero-photo-overlay"></div>
 
-          <div className="photo-grid" aria-hidden="true"></div>
+
 
           <div className="hero-photo-badge">
             Open longer. Stocked better.
           </div>
 
-          <div className="float-panel float-one" aria-hidden="true">
-            <span className="float-ring"></span>
-            <span className="float-bar"></span>
-          </div>
 
-          <div className="float-panel float-two" aria-hidden="true">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
 
-          <div className="float-panel float-three" aria-hidden="true">
-            <i></i>
-            <i></i>
-            <i></i>
-            <i></i>
-            <i></i>
-            <i></i>
-          </div>
+
+
+
 
           <div className="hero-photo-content">
 
             <Link className="hero-photo-link" to="/about">
-              Discover All Hours <span className="arrow">→</span>
+              Discover All Hours <span className="arrow"><Icon name="arrow-right" /></span>
             </Link>
 
           </div>
@@ -125,9 +112,7 @@ export default function Home() {
           24
         </div>
 
-        <div className="intro-orbit" aria-hidden="true">
-          <span></span>
-        </div>
+
 
         <div className="split">
 
@@ -158,7 +143,7 @@ export default function Home() {
             </p>
 
             <Link className="tlink" to="/about">
-              How we work <span className="arrow">→</span>
+              How we work <span className="arrow"><Icon name="arrow-right" /></span>
             </Link>
 
           </div>
@@ -289,7 +274,7 @@ export default function Home() {
 
         <div className="btn-row">
           <Link className="btn ghost" to="/formats">
-            See all formats in detail <span className="arrow">→</span>
+            See all formats in detail <span className="arrow"><Icon name="arrow-right" /></span>
           </Link>
         </div>
 
@@ -299,8 +284,8 @@ export default function Home() {
       {/* STOCK SUPPLY SECTION */}
       <section className="band night stock-section">
 
-        <div className="stock-glow" aria-hidden="true"></div>
-        <div className="stock-grid-pattern" aria-hidden="true"></div>
+
+
 
         <div className="shell stock-layout">
 
@@ -330,12 +315,12 @@ export default function Home() {
 
           <div className="stock-panel">
 
-            <div className="stock-panel-glow" aria-hidden="true"></div>
+
 
             <div className="stock-info-row">
 
               <div className="stock-icon">
-                <span className="icon-doc"></span>
+                <Icon name="file-check" />
               </div>
 
               <p>
@@ -351,7 +336,7 @@ export default function Home() {
             <div className="stock-info-row">
 
               <div className="stock-icon">
-                <span className="icon-shield"></span>
+                <Icon name="shield-check" />
               </div>
 
               <p>
@@ -362,7 +347,7 @@ export default function Home() {
             </div>
 
             <Link className="btn on-night stock-btn" to="/stock">
-              See how it works <span className="arrow">→</span>
+              See how it works <span className="arrow"><Icon name="arrow-right" /></span>
             </Link>
 
           </div>
@@ -375,7 +360,7 @@ export default function Home() {
       {/* FRANCHISE */}
       <section className="band shell franchise-section">
 
-        <div className="franchise-dots" aria-hidden="true"></div>
+
 
         <div className="franchise-layout">
 
@@ -404,7 +389,7 @@ export default function Home() {
 
               <div className="btn-row">
                 <Link className="btn" to="/franchise">
-                  Apply for a franchise <span className="arrow">→</span>
+                  Apply for a franchise <span className="arrow"><Icon name="arrow-right" /></span>
                 </Link>
               </div>
 
@@ -420,7 +405,7 @@ export default function Home() {
       {/* PARTNERS */}
       <section className="band shell partners-section">
 
-        <div className="partners-dots" aria-hidden="true"></div>
+
 
         <div className="partners-layout">
 
@@ -455,7 +440,7 @@ export default function Home() {
 
               <div className="btn-row">
                 <Link className="btn" to="/partners">
-                  Partner with us <span className="arrow">→</span>
+                  Partner with us <span className="arrow"><Icon name="arrow-right" /></span>
                 </Link>
               </div>
 
@@ -471,8 +456,8 @@ export default function Home() {
       {/* NUMBERS */}
       <section className="band shell numbers-section">
 
-        <div className="numbers-orbit numbers-orbit-one" aria-hidden="true"></div>
-        <div className="numbers-orbit numbers-orbit-two" aria-hidden="true"></div>
+
+
 
         <div className="proof">
 
@@ -480,28 +465,28 @@ export default function Home() {
             <span className="proof-line" aria-hidden="true"></span>
             <span className="n">120</span>
             <span className="t">Stores trading and in development</span>
-            <span className="proof-shine" aria-hidden="true"></span>
+
           </div>
 
           <div className="proof-card">
             <span className="proof-line" aria-hidden="true"></span>
             <span className="n">1,400</span>
             <span className="t">Independent shops on the stock supply scheme</span>
-            <span className="proof-shine" aria-hidden="true"></span>
+
           </div>
 
           <div className="proof-card">
             <span className="proof-line" aria-hidden="true"></span>
             <span className="n">6</span>
             <span className="t">Markets we operate in</span>
-            <span className="proof-shine" aria-hidden="true"></span>
+
           </div>
 
           <div className="proof-card">
             <span className="proof-line" aria-hidden="true"></span>
             <span className="n">18hrs</span>
             <span className="t">Average daily trading window</span>
-            <span className="proof-shine" aria-hidden="true"></span>
+
           </div>
 
         </div>
@@ -512,8 +497,8 @@ export default function Home() {
       {/* ENQUIRY */}
       <section className="band shell enquiry-section">
 
-        <div className="enquiry-orbit" aria-hidden="true"></div>
-        <div className="enquiry-dots" aria-hidden="true"></div>
+
+
 
         <div className="enquiry-layout">
 
@@ -534,7 +519,7 @@ export default function Home() {
 
           <div className="form-wrap">
 
-            <div className="form-glow" aria-hidden="true"></div>
+
 
             <form className="js-form">
 
@@ -583,7 +568,7 @@ export default function Home() {
               <div className="enquiry-submit">
 
                 <button className="btn enquiry-btn" type="submit">
-                  Send enquiry <span className="arrow">→</span>
+                  Send enquiry <span className="arrow"><Icon name="arrow-right" /></span>
                 </button>
 
                 <p className="fnote">

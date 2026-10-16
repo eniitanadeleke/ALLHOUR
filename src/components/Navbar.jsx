@@ -2,6 +2,7 @@ import './Navbar.css';
 import { NavLink } from 'react-router-dom';
 import { useState } from 'react';
 import logo from '../assets/all-hours-orange-blue-logo-transparent.png';
+import Icon from './Icon';
 
 const links = [
   ['/about', 'About'],
@@ -44,7 +45,7 @@ export default function Navbar() {
           ))}
 
           <NavLink className="nav-cta" to="/contact" onClick={close}>
-            Contact us <span>→</span>
+            Contact us <span className="arrow"><Icon name="arrow-right" /></span>
           </NavLink>
         </nav>
       </div>

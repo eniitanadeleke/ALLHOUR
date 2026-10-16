@@ -7,8 +7,8 @@ export default function About() {
 
       {/* HERO */}
       <section className="hero shell about-hero">
-        <span className="about-orbit about-orbit-one" aria-hidden="true"></span>
-        <span className="about-dots" aria-hidden="true"></span>
+
+
 
         <div className="hero-grid about-hero-grid">
           <div className="about-hero-copy">
@@ -47,7 +47,7 @@ export default function About() {
 
       {/* VISION MISSION PHILOSOPHY */}
       <section className="band sunk about-pillars">
-        <span className="pillar-orbit" aria-hidden="true"></span>
+
 
         <div className="shell">
           <div className="g3 pillar-grid">
@@ -139,8 +139,8 @@ export default function About() {
 
       {/* HOW WE OPERATE */}
       <section className="band night operate-section">
-        <span className="operate-glow" aria-hidden="true"></span>
-        <span className="operate-orbit" aria-hidden="true"></span>
+
+
 
         <div className="shell">
           <div className="head-block operate-head">

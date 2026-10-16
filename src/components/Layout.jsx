@@ -5,15 +5,15 @@ import Navbar from './Navbar';
 import Footer from './Footer';
 
 const titles = {
-  '/': 'All Hours', '/about':'About · All Hours', '/formats':'Store formats · All Hours',
-  '/stock':'Stock supply · All Hours', '/franchise':'Franchise · All Hours', '/services':'What we do · All Hours',
-  '/partners':'Partners · All Hours', '/contact':'Contact · All Hours'
+  '/': 'All Hours', '/about':'About | All Hours', '/formats':'Store formats | All Hours',
+  '/stock':'Stock supply | All Hours', '/franchise':'Franchise | All Hours', '/services':'What we do | All Hours',
+  '/partners':'Partners | All Hours', '/contact':'Contact | All Hours'
 };
 
 export default function Layout() {
   const location = useLocation();
   useEffect(() => {
-    document.title = titles[location.pathname] || 'All Hours';
+    document.title = titles[location.pathname] || 'Page not found | All Hours';
     requestAnimationFrame(() => {
       if (location.hash) document.querySelector(location.hash)?.scrollIntoView({ behavior:'smooth', block:'start' });
       else window.scrollTo({ top:0, behavior:'auto' });

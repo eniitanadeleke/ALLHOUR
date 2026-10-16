@@ -44,7 +44,7 @@ export default function Footer() {
 
       <footer className="site">
 
-        <div className="footer-glow" aria-hidden="true"></div>
+
 
         <div className="shell">
 

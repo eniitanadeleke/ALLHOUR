@@ -8,7 +8,7 @@ export default function Partners() {
       <section className="hero shell partners-hero">
         <span className="pt-hero-shape pt-shape-one" aria-hidden="true"></span>
         <span className="pt-hero-shape pt-shape-two" aria-hidden="true"></span>
-        <span className="pt-hero-grid-art" aria-hidden="true"></span>
+
 
         <div className="pt-hero-layout">
           <div className="pt-hero-copy">
@@ -187,7 +187,7 @@ export default function Partners() {
 
       {/* NETWORK */}
       <section className="band night pt-network">
-        <span className="pt-network-glow" aria-hidden="true"></span>
+
         <span className="pt-network-ring pt-ring-one" aria-hidden="true"></span>
         <span className="pt-network-ring pt-ring-two" aria-hidden="true"></span>
 
@@ -243,7 +243,7 @@ export default function Partners() {
       {/* CONTACT */}
       <section className="band shell pt-contact">
         <span className="pt-contact-shape" aria-hidden="true"></span>
-        <span className="pt-contact-dots" aria-hidden="true"></span>
+
 
         <div className="pt-contact-layout">
 

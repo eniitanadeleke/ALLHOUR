@@ -1,5 +1,6 @@
 import './Services.css';
 import { Link } from 'react-router-dom';
+import Icon from '../components/Icon';
 
 export default function Services() {
   return (
@@ -7,9 +8,9 @@ export default function Services() {
 
       {/* HERO */}
       <section className="hero shell services-hero">
-        <span className="sv-hero-orbit sv-orbit-one" aria-hidden="true"></span>
-        <span className="sv-hero-orbit sv-orbit-two" aria-hidden="true"></span>
-        <span className="sv-hero-dots" aria-hidden="true"></span>
+
+
+
 
         <div className="sv-hero-layout">
 
@@ -45,7 +46,7 @@ export default function Services() {
 
         {/* FRANCHISING */}
         <article className="svc-row sv-row sv-franchise">
-          <span className="sv-row-orbit" aria-hidden="true"></span>
+
 
           <div className="shell sv-row-inner">
 
@@ -60,7 +61,7 @@ export default function Services() {
               </p>
 
               <Link className="tlink sv-link" to="/franchise">
-                Franchise details <span className="arrow">→</span>
+                Franchise details <span className="arrow"><Icon name="arrow-right" /></span>
               </Link>
             </div>
 
@@ -70,7 +71,7 @@ export default function Services() {
 
         {/* SHELF PLATFORM */}
         <article className="svc-row sv-row sv-shelf">
-          <span className="sv-row-dots" aria-hidden="true"></span>
+
 
           <div className="shell sv-row-inner sv-row-reverse">
 
@@ -91,8 +92,8 @@ export default function Services() {
 
         {/* DIGITAL DISTRIBUTION */}
         <article className="svc-row sv-row sv-digital">
-          <span className="sv-digital-glow" aria-hidden="true"></span>
-          <span className="sv-digital-grid" aria-hidden="true"></span>
+
+
 
           <div className="shell sv-row-inner">
 
@@ -179,7 +180,7 @@ export default function Services() {
 
         {/* SUPPLIER DEVELOPMENT */}
         <article className="svc-row sv-row sv-development">
-          <span className="sv-development-glow" aria-hidden="true"></span>
+
 
           <div className="shell sv-row-inner">
 
@@ -194,7 +195,7 @@ export default function Services() {
               </p>
 
               <Link className="tlink sv-link" to="/partners">
-                Become a supplier <span className="arrow">→</span>
+                Become a supplier <span className="arrow"><Icon name="arrow-right" /></span>
               </Link>
             </div>
 

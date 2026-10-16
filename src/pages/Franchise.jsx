@@ -1,6 +1,7 @@
 import './Franchise.css';
 import franchisePhoto from '../assets/photos/franchise-owner-entrance.jpg';
 import { Link } from 'react-router-dom';
+import Icon from '../components/Icon';
 
 export default function Franchise() {
   return (
@@ -8,9 +9,9 @@ export default function Franchise() {
 
       {/* HERO */}
       <section className="hero shell franchise-hero">
-        <span className="fr-hero-orbit fr-hero-orbit-one" aria-hidden="true"></span>
-        <span className="fr-hero-orbit fr-hero-orbit-two" aria-hidden="true"></span>
-        <span className="fr-hero-dots" aria-hidden="true"></span>
+
+
+
 
         <div className="hero-grid fr-hero-grid">
           <div className="fr-hero-copy">
@@ -30,7 +31,7 @@ export default function Franchise() {
 
             <div className="btn-row">
               <Link className="btn sun fr-hero-btn" to="/franchise#fr-form">
-                Apply for a franchise <span className="arrow">→</span>
+                Apply for a franchise <span className="arrow"><Icon name="arrow-right" /></span>
               </Link>
             </div>
           </div>
@@ -103,8 +104,8 @@ export default function Franchise() {
 
       {/* WHAT WE LOOK FOR */}
       <section className="band night fr-criteria">
-        <span className="fr-night-orbit fr-night-orbit-one" aria-hidden="true"></span>
-        <span className="fr-night-orbit fr-night-orbit-two" aria-hidden="true"></span>
+
+
 
         <div className="shell">
           <div className="head-block fr-criteria-head">
@@ -170,7 +171,7 @@ export default function Franchise() {
 
       {/* PROCESS */}
       <section className="band shell fr-process">
-        <span className="fr-process-orbit" aria-hidden="true"></span>
+
 
         <div className="fr-process-layout">
           <div className="fr-process-copy">
@@ -251,8 +252,8 @@ export default function Franchise() {
 
       {/* APPLICATION */}
       <section className="band sunk fr-apply">
-        <span className="fr-apply-orbit fr-apply-orbit-one" aria-hidden="true"></span>
-        <span className="fr-apply-orbit fr-apply-orbit-two" aria-hidden="true"></span>
+
+
 
         <div className="shell fr-apply-layout">
           <div className="fr-apply-copy">

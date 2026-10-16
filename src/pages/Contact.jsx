@@ -7,9 +7,9 @@ export default function Contact() {
 
       {/* HERO */}
       <section className="hero shell contact-hero">
-        <span className="ct-hero-orbit ct-orbit-one" aria-hidden="true"></span>
-        <span className="ct-hero-orbit ct-orbit-two" aria-hidden="true"></span>
-        <span className="ct-hero-dots" aria-hidden="true"></span>
+
+
+
 
         <div className="ct-hero-layout">
           <div className="ct-hero-copy">
@@ -36,7 +36,7 @@ export default function Contact() {
 
       {/* CONTACT DETAILS */}
       <section className="band shell ct-details">
-        <span className="ct-details-glow" aria-hidden="true"></span>
+
 
         <div className="ct-card-grid">
 
@@ -120,9 +120,9 @@ export default function Contact() {
 
       {/* MESSAGE FORM */}
       <section className="band sunk ct-message">
-        <span className="ct-message-orbit ct-message-orbit-one" aria-hidden="true"></span>
-        <span className="ct-message-orbit ct-message-orbit-two" aria-hidden="true"></span>
-        <span className="ct-message-dots" aria-hidden="true"></span>
+
+
+
 
         <div className="shell ct-message-layout">
 

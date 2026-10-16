@@ -1,10 +1,10 @@
-.nav{position:sticky;top:0;z-index:1000;width:100%;background:rgba(247,243,235,.97);border-bottom:1px solid rgba(11,23,48,.09);backdrop-filter:blur(18px);box-shadow:0 8px 28px rgba(11,23,48,.055)}
+.nav{position:sticky;top:0;z-index:1000;width:100%;background:rgba(247,243,235,.97);border-bottom:1px solid rgba(11,23,48,.09);box-shadow:0 8px 28px rgba(11,23,48,.055)}
 .nav-in{width:min(91%,1440px);height:70px;margin:auto;display:flex;align-items:center;gap:24px}
 .mark{display:flex;align-items:center;flex:0 0 auto;text-decoration:none}
 .brand-logo-wrap{width:88px;height:54px;display:flex;align-items:center;justify-content:flex-start;flex:0 0 88px;overflow:visible;background:transparent}
 .brand-logo{display:block;width:100%;height:100%;object-fit:contain;object-position:left center}
 .nav-links{margin-left:auto;display:flex;align-items:center;justify-content:flex-end;gap:clamp(16px,1.55vw,27px)}
-.nav-links>a{position:relative;color:#25334c;text-decoration:none;font-family:"Manrope","DM Sans",Arial,sans-serif;font-size:13px;font-weight:600;letter-spacing:.01em;white-space:nowrap;transition:color .25s ease}
+.nav-links>a{position:relative;color:#25334c;text-decoration:none;font-family:var(--font-body);font-size:13px;font-weight:600;letter-spacing:.01em;white-space:nowrap;transition:color .25s ease}
 .nav-links>a:not(.nav-cta)::after{content:"";position:absolute;left:50%;bottom:-9px;width:0;height:1.5px;background:#c98212;transform:translateX(-50%);transition:width .25s ease}
 .nav-links>a:not(.nav-cta):hover,.nav-links>a.active:not(.nav-cta){color:#b8730e}
 .nav-links>a:not(.nav-cta):hover::after,.nav-links>a.active:not(.nav-cta)::after{width:100%}
@@ -14,15 +14,34 @@
 .nav-links .nav-cta:hover{background:#ad6b0b;transform:translateY(-1px);box-shadow:0 8px 18px rgba(196,124,24,.18)}
 .nav-links .nav-cta:hover span{transform:translateX(3px)}
 .nav-toggle{display:none;width:38px;height:38px;margin-left:auto;padding:9px;border:1px solid rgba(11,23,48,.16);background:transparent;cursor:pointer}
-.nav-toggle span{display:block;width:100%;height:1.5px;margin:4.5px 0;background:#0b1730;transition:transform .25s ease,opacity .25s ease}
+.nav-toggle span{display:block;width:100%;height:2px;border-radius:2px;margin:4.5px 0;background:#0b1730;transition:transform .25s ease,opacity .25s ease}
 .nav-toggle.active span:nth-child(1){transform:translateY(6px) rotate(45deg)}
 .nav-toggle.active span:nth-child(2){opacity:0}
 .nav-toggle.active span:nth-child(3){transform:translateY(-6px) rotate(-45deg)}
-@media(max-width:1180px){.nav-in{width:min(94%,1440px);height:66px}.brand-logo-wrap{width:82px;height:50px;flex-basis:82px}.nav-toggle{display:block}.nav-links{position:absolute;top:100%;left:0;right:0;margin:0;padding:13px 5% 22px;display:flex;flex-direction:column;align-items:stretch;gap:0;background:#f7f3eb;border-top:1px solid rgba(11,23,48,.07);border-bottom:1px solid rgba(11,23,48,.1);box-shadow:0 22px 42px rgba(11,23,48,.12);opacity:0;visibility:hidden;transform:translateY(-7px);transition:opacity .22s ease,visibility .22s ease,transform .22s ease}.nav-links.open{opacity:1;visibility:visible;transform:translateY(0)}.nav-links>a{padding:13px 0;border-bottom:1px solid rgba(11,23,48,.08);font-size:14px}.nav-links>a:not(.nav-cta)::after{display:none}.nav-links .nav-cta{width:100%;height:44px;margin:15px 0 0;padding:0 18px;border-bottom:1px solid #c98212}}
-@media(max-width:600px){.nav-in{width:91%;height:60px}.brand-logo-wrap{width:72px;height:44px;flex-basis:72px}.nav-toggle{width:36px;height:36px;padding:8px}.nav-links{padding-left:4.5%;padding-right:4.5%}.nav-links>a{padding:12px 0;font-size:13.5px}}
-@media(max-width:380px){.nav-in{height:58px}.brand-logo-wrap{width:67px;height:41px;flex-basis:67px}}
-@media(prefers-reduced-motion:reduce){.nav-links>a,.nav-links>a::after,.nav-links .nav-cta,.nav-links .nav-cta span,.nav-toggle span{transition:none}}
-
+@media(max-width:1180px){
+.nav-in{width:min(94%,1440px);height:66px}
+.brand-logo-wrap{width:82px;height:50px;flex-basis:82px}
+.nav-toggle{display:block}
+.nav-links{position:absolute;top:100%;left:0;right:0;margin:0;padding:13px 5% 22px;display:flex;flex-direction:column;align-items:stretch;gap:0;background:#f7f3eb;border-top:1px solid rgba(11,23,48,.07);border-bottom:1px solid rgba(11,23,48,.1);box-shadow:0 1px 2px rgba(17,26,51,.05),0 12px 28px -18px rgba(17,26,51,.28);opacity:0;visibility:hidden;transform:translateY(-7px);transition:opacity .22s ease,visibility .22s ease,transform .22s ease}
+.nav-links.open{opacity:1;visibility:visible;transform:translateY(0)}
+.nav-links>a{padding:13px 0;border-bottom:1px solid rgba(11,23,48,.08);font-size:14px}
+.nav-links>a:not(.nav-cta)::after{display:none}
+.nav-links .nav-cta{width:100%;height:44px;margin:15px 0 0;padding:0 18px;border-bottom:1px solid #c98212}
+}
+@media(max-width:600px){
+.nav-in{width:91%;height:60px}
+.brand-logo-wrap{width:72px;height:44px;flex-basis:72px}
+.nav-toggle{width:36px;height:36px;padding:8px}
+.nav-links{padding-left:4.5%;padding-right:4.5%}
+.nav-links>a{padding:12px 0;font-size:13.5px}
+}
+@media(max-width:380px){
+.nav-in{height:58px}
+.brand-logo-wrap{width:67px;height:41px;flex-basis:67px}
+}
+@media(prefers-reduced-motion:reduce){
+.nav-links>a,.nav-links>a::after,.nav-links .nav-cta,.nav-links .nav-cta span,.nav-toggle span{transition:none}
+}
 /* 2026 brand polish: compact, pronounced and responsive */
 .nav{box-shadow:0 10px 30px rgba(11,23,48,.10),0 1px 0 rgba(255,255,255,.7);transition:box-shadow .3s ease,background-color .3s ease}
 .nav:hover{box-shadow:0 13px 34px rgba(11,23,48,.13),0 1px 0 rgba(255,255,255,.75)}
@@ -31,6 +50,13 @@
 .mark:hover .brand-logo{transform:scale(1.035);filter:drop-shadow(0 4px 8px rgba(11,23,48,.08))}
 .nav-toggle{border-radius:10px;transition:background .25s ease,border-color .25s ease}
 .nav-toggle:hover{background:rgba(196,124,24,.07);border-color:rgba(196,124,24,.4)}
-@media(max-width:1180px){.brand-logo-wrap{width:78px;height:48px;flex-basis:78px}}
-@media(max-width:600px){.brand-logo-wrap{width:68px;height:42px;flex-basis:68px}.nav{box-shadow:0 7px 22px rgba(11,23,48,.10)}}
-@media(max-width:380px){.brand-logo-wrap{width:64px;height:39px;flex-basis:64px}}
+@media(max-width:1180px){
+.brand-logo-wrap{width:78px;height:48px;flex-basis:78px}
+}
+@media(max-width:600px){
+.brand-logo-wrap{width:68px;height:42px;flex-basis:68px}
+.nav{box-shadow:0 7px 22px rgba(11,23,48,.10)}
+}
+@media(max-width:380px){
+.brand-logo-wrap{width:64px;height:39px;flex-basis:64px}
+}

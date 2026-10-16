@@ -1,15 +1,16 @@
 import './StockSupply.css';
 import stockPhoto from '../assets/photos/stock-shop-owner.jpg';
 import { Link } from 'react-router-dom';
+import Icon from '../components/Icon';
 
 export default function StockSupply() {
   return (
     <div className="view on page-shell page-stock" id="stock">
 
       <section className="hero shell stock-hero">
-        <span className="stock-orbit stock-orbit-one" aria-hidden="true"></span>
-        <span className="stock-orbit stock-orbit-two" aria-hidden="true"></span>
-        <span className="stock-dots" aria-hidden="true"></span>
+
+
+
 
         <div className="hero-grid stock-hero-grid">
           <div className="stock-hero-copy">
@@ -34,7 +35,7 @@ export default function StockSupply() {
 
             <div className="btn-row">
               <Link className="btn sun stock-hero-btn" to="/stock#stock-form">
-                Apply to join <span className="arrow">→</span>
+                Apply to join <span className="arrow"><Icon name="arrow-right" /></span>
               </Link>
             </div>
           </div>
@@ -42,7 +43,7 @@ export default function StockSupply() {
 
         <div className="plate wide stock-hero-photo">
           <span className="stock-photo-inner" aria-hidden="true"></span>
-          <span className="stock-photo-glow" aria-hidden="true"></span>
+
 
           <img className="plate-photo" src={stockPhoto} alt="An independent shop owner at her counter in front of fully stocked shelves" />
         </div>
@@ -50,8 +51,8 @@ export default function StockSupply() {
 
 
       <section className="band shell stock-process">
-        <span className="process-orbit process-orbit-one" aria-hidden="true"></span>
-        <span className="process-orbit process-orbit-two" aria-hidden="true"></span>
+
+
 
         <div className="head-block stock-process-head">
           <span className="stock-label-line" aria-hidden="true"></span>
@@ -128,9 +129,9 @@ export default function StockSupply() {
 
 
       <section className="band night stock-benefits">
-        <span className="benefit-orbit benefit-orbit-one" aria-hidden="true"></span>
-        <span className="benefit-orbit benefit-orbit-two" aria-hidden="true"></span>
-        <span className="benefit-dots" aria-hidden="true"></span>
+
+
+
 
         <div className="shell stock-benefits-layout">
 
@@ -197,8 +198,8 @@ export default function StockSupply() {
 
 
       <section className="band shell stock-audience">
-        <span className="audience-orbit audience-orbit-one" aria-hidden="true"></span>
-        <span className="audience-orbit audience-orbit-two" aria-hidden="true"></span>
+
+
 
         <div className="stock-audience-layout">
 
@@ -226,7 +227,7 @@ export default function StockSupply() {
 
               <div className="audience-card-head">
                 <span className="audience-icon audience-icon-check" aria-hidden="true">
-                  <span></span>
+                  <Icon name="file-check" />
                 </span>
 
                 <div>
@@ -239,42 +240,42 @@ export default function StockSupply() {
 
                 <li>
                   <span className="audience-list-icon check" aria-hidden="true">
-                    <span></span>
+                    <Icon name="check" />
                   </span>
                   <span>A trading shop with a fixed address</span>
                 </li>
 
                 <li>
                   <span className="audience-list-icon check" aria-hidden="true">
-                    <span></span>
+                    <Icon name="check" />
                   </span>
                   <span>Business registration where required</span>
                 </li>
 
                 <li>
                   <span className="audience-list-icon check" aria-hidden="true">
-                    <span></span>
+                    <Icon name="check" />
                   </span>
                   <span>Valid identification</span>
                 </li>
 
                 <li>
                   <span className="audience-list-icon check" aria-hidden="true">
-                    <span></span>
+                    <Icon name="check" />
                   </span>
                   <span>A bank account</span>
                 </li>
 
                 <li>
                   <span className="audience-list-icon check" aria-hidden="true">
-                    <span></span>
+                    <Icon name="check" />
                   </span>
                   <span>An idea of your monthly sales</span>
                 </li>
 
                 <li>
                   <span className="audience-list-icon check" aria-hidden="true">
-                    <span></span>
+                    <Icon name="check" />
                   </span>
                   <span>Requirements to confirm with the bank</span>
                 </li>
@@ -288,7 +289,7 @@ export default function StockSupply() {
 
               <div className="audience-card-head">
                 <span className="audience-icon audience-icon-no" aria-hidden="true">
-                  <span></span>
+                  <Icon name="ban" />
                 </span>
 
                 <div>
@@ -301,28 +302,28 @@ export default function StockSupply() {
 
                 <li>
                   <span className="audience-list-icon no" aria-hidden="true">
-                    <span></span>
+                    <Icon name="x" />
                   </span>
                   <span>Payment for the stock before it arrives</span>
                 </li>
 
                 <li>
                   <span className="audience-list-icon no" aria-hidden="true">
-                    <span></span>
+                    <Icon name="x" />
                   </span>
                   <span>A minimum order that empties your account</span>
                 </li>
 
                 <li>
                   <span className="audience-list-icon no" aria-hidden="true">
-                    <span></span>
+                    <Icon name="x" />
                   </span>
                   <span>Exclusive supply, you can still buy elsewhere</span>
                 </li>
 
                 <li>
                   <span className="audience-list-icon no" aria-hidden="true">
-                    <span></span>
+                    <Icon name="x" />
                   </span>
                   <span>Your shop signage or your shop name</span>
                 </li>
@@ -337,9 +338,9 @@ export default function StockSupply() {
 
 
       <section className="band sunk stock-faq-section">
-        <span className="stock-faq-orbit stock-faq-orbit-one" aria-hidden="true"></span>
-        <span className="stock-faq-orbit stock-faq-orbit-two" aria-hidden="true"></span>
-        <span className="stock-faq-dots" aria-hidden="true"></span>
+
+
+
 
         <div className="shell stock-faq-layout">
 
@@ -359,9 +360,7 @@ export default function StockSupply() {
             <details className="stock-faq-card">
               <summary>
                 <span className="stock-faq-icon" aria-hidden="true">
-                  <span className="stock-faq-bubble">
-                    <span className="stock-faq-mark"></span>
-                  </span>
+                  <Icon name="question" />
                 </span>
 
                 <span className="stock-faq-question">
@@ -369,7 +368,7 @@ export default function StockSupply() {
                 </span>
 
                 <span className="stock-faq-separator" aria-hidden="true"></span>
-                <span className="stock-faq-toggle" aria-hidden="true"></span>
+                <span className="stock-faq-toggle" aria-hidden="true"><Icon name="plus" /></span>
               </summary>
 
               <div className="ans stock-faq-answer">
@@ -383,9 +382,7 @@ export default function StockSupply() {
             <details className="stock-faq-card">
               <summary>
                 <span className="stock-faq-icon" aria-hidden="true">
-                  <span className="stock-faq-bubble">
-                    <span className="stock-faq-mark"></span>
-                  </span>
+                  <Icon name="question" />
                 </span>
 
                 <span className="stock-faq-question">
@@ -393,7 +390,7 @@ export default function StockSupply() {
                 </span>
 
                 <span className="stock-faq-separator" aria-hidden="true"></span>
-                <span className="stock-faq-toggle" aria-hidden="true"></span>
+                <span className="stock-faq-toggle" aria-hidden="true"><Icon name="plus" /></span>
               </summary>
 
               <div className="ans stock-faq-answer">
@@ -407,9 +404,7 @@ export default function StockSupply() {
             <details className="stock-faq-card">
               <summary>
                 <span className="stock-faq-icon" aria-hidden="true">
-                  <span className="stock-faq-bubble">
-                    <span className="stock-faq-mark"></span>
-                  </span>
+                  <Icon name="question" />
                 </span>
 
                 <span className="stock-faq-question">
@@ -417,7 +412,7 @@ export default function StockSupply() {
                 </span>
 
                 <span className="stock-faq-separator" aria-hidden="true"></span>
-                <span className="stock-faq-toggle" aria-hidden="true"></span>
+                <span className="stock-faq-toggle" aria-hidden="true"><Icon name="plus" /></span>
               </summary>
 
               <div className="ans stock-faq-answer">
@@ -431,9 +426,7 @@ export default function StockSupply() {
             <details className="stock-faq-card">
               <summary>
                 <span className="stock-faq-icon" aria-hidden="true">
-                  <span className="stock-faq-bubble">
-                    <span className="stock-faq-mark"></span>
-                  </span>
+                  <Icon name="question" />
                 </span>
 
                 <span className="stock-faq-question">
@@ -441,7 +434,7 @@ export default function StockSupply() {
                 </span>
 
                 <span className="stock-faq-separator" aria-hidden="true"></span>
-                <span className="stock-faq-toggle" aria-hidden="true"></span>
+                <span className="stock-faq-toggle" aria-hidden="true"><Icon name="plus" /></span>
               </summary>
 
               <div className="ans stock-faq-answer">
@@ -455,9 +448,7 @@ export default function StockSupply() {
             <details className="stock-faq-card">
               <summary>
                 <span className="stock-faq-icon" aria-hidden="true">
-                  <span className="stock-faq-bubble">
-                    <span className="stock-faq-mark"></span>
-                  </span>
+                  <Icon name="question" />
                 </span>
 
                 <span className="stock-faq-question">
@@ -465,7 +456,7 @@ export default function StockSupply() {
                 </span>
 
                 <span className="stock-faq-separator" aria-hidden="true"></span>
-                <span className="stock-faq-toggle" aria-hidden="true"></span>
+                <span className="stock-faq-toggle" aria-hidden="true"><Icon name="plus" /></span>
               </summary>
 
               <div className="ans stock-faq-answer">

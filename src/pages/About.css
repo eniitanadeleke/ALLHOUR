@@ -1,19 +1,14 @@
 /* ABOUT */
 .page-about{overflow:hidden;background:#f3f1eb;color:#101a33}
-.page-about .label{font-family:var(--font-mono);font-size:9px;font-weight:600;letter-spacing:3.6px;text-transform:uppercase;color:#bb7813}
-.page-about .about-label-line{position:relative;display:block;width:108px;height:1px;margin-top:17px;background:#c98a25}
-.page-about .about-label-line::after{content:"";position:absolute;right:0;top:-2px;width:5px;height:5px;border-radius:50%;background:#d99a32;box-shadow:none}
+.page-about .label{font-family:var(--font-mono);font-size:11px;font-weight:600;letter-spacing:3.6px;text-transform:uppercase;color:#bb7813}
 /* HERO */
-.page-about .about-hero{position:relative;overflow:hidden;padding-top:clamp(88px,8vw,130px);padding-bottom:clamp(80px,8vw,120px);isolation:isolate}
-.page-about .about-hero::before{content:"";position:absolute;right:-240px;top:-240px;width:560px;height:560px;border-radius:50%;background:none;pointer-events:none}
-.page-about .about-hero-grid{position:relative;z-index:2;display:grid;grid-template-columns:minmax(0,1.18fr) minmax(360px,.65fr);gap:clamp(55px,8vw,130px);align-items:end}
+.page-about .about-hero{position:relative;overflow:hidden;padding-top:clamp(56px,6vw,96px);padding-bottom:clamp(56px,6vw,96px);isolation:isolate}
+.page-about .about-hero-grid{position:relative;z-index:2;display:grid;grid-template-columns:minmax(0,1.18fr) minmax(360px,.65fr);gap:clamp(55px,8vw,130px);align-items:center}
 .page-about .about-hero-copy .display{max-width:1000px;margin:38px 0 0;font-family:var(--font-display);font-size:clamp(65px,6.6vw,120px);font-weight:500;line-height:.95;letter-spacing:-2.8px;color:#101a33;text-wrap:balance}
 .page-about .about-hero-lede{position:relative;padding:32px 0 4px 34px;border-left:1px solid rgba(190,124,18,.24)}
-.page-about .about-hero-lede::before{content:"";position:absolute;left:-3px;top:29px;width:5px;height:5px;border-radius:50%;background:#d59127;box-shadow:none}
 .page-about .about-hero-lede .lede{margin:0;font-family:var(--font-body);font-size:clamp(18px,1.45vw,23px);font-weight:400;line-height:1.72;color:#5e6c86}
 .page-about .about-photo{position:relative;z-index:2;overflow:hidden;height:clamp(330px,43vw,650px);margin-top:clamp(54px,6vw,82px)!important;border:1px solid rgba(17,26,51,.08);background:#d7d2c7;box-shadow:0 1px 2px rgba(17,26,51,.05),0 12px 28px -18px rgba(17,26,51,.28)}
 .page-about .about-photo::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 42%,rgba(8,18,38,.44));pointer-events:none}
-.page-about .photo-frame{position:absolute;inset:20px;border:1px solid rgba(255,255,255,.24);pointer-events:none}
 .page-about .about-photo .cap{position:absolute;left:clamp(25px,3vw,48px);bottom:clamp(24px,3vw,42px);z-index:2;max-width:700px;font-family:var(--font-body);font-size:13px;line-height:1.6;color:rgba(255,255,255,.82)}
 .page-about .about-photo .cap b{font-family:var(--font-mono);font-size:9px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#e7b45d}
 /* WHY */
@@ -29,8 +24,6 @@
 .page-about .pillar-grid{position:relative;z-index:2;display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
 .page-about .pillar-card{position:relative;overflow:hidden;min-height:370px;padding:clamp(34px,3vw,48px);border:1px solid var(--line-2);background:var(--paper);box-shadow:0 1px 2px rgba(17,26,51,.05),0 12px 28px -18px rgba(17,26,51,.28);transition:transform .4s ease,box-shadow .4s ease,border-color .4s ease}
 .page-about .pillar-card:hover{transform:translateY(-3px);border-color:rgba(201,134,29,.18);box-shadow:0 1px 2px rgba(17,26,51,.05),0 12px 28px -18px rgba(17,26,51,.28)}
-.page-about .pillar-card::after{content:"";position:absolute;right:-90px;bottom:-110px;width:240px;height:240px;border-radius:50%;background:none}
-.page-about .pillar-line{display:block;width:55px;height:2px;margin-bottom:68px;background:#d3932c}
 .page-about .pillar-card h4{max-width:260px;margin:0 0 28px;font-family:var(--font-display);font-size:clamp(31px,2.4vw,42px);font-weight:500;line-height:1.05;letter-spacing:-0.6px;color:#101a33}
 .page-about .pillar-card p{position:relative;z-index:2;margin:0;font-family:var(--font-body);font-size:16px;line-height:1.78;color:#637087}
 /* VALUES */
@@ -43,22 +36,20 @@
 .page-about .values-grid .value-card:hover{z-index:2;background:#101b34;transform:translateY(-4px)}
 .page-about .values-grid .ch{display:block;margin-bottom:55px;font-family:var(--font-display);font-size:clamp(55px,4vw,76px);font-weight:500;line-height:1;color:#ce8a23;transition:color .35s ease,transform .35s ease}
 .page-about .values-grid .value-card:hover .ch{color:#e6ac50;transform:translateX(4px)}
-.page-about .values-grid h4{margin:0 0 14px;font-family:var(--font-mono);font-size:11px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#101a33;transition:color .35s ease}
-.page-about .values-grid p{margin:0;font-family:var(--font-body);font-size:14px;line-height:1.7;color:#647088;transition:color .35s ease}
+.page-about .values-grid h4{margin:0 0 14px;font-family:var(--font-mono);font-size:12px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#101a33;transition:color .35s ease}
+.page-about .values-grid p{margin:0;font-family:var(--font-body);font-size:16px;line-height:1.7;color:#647088;transition:color .35s ease}
 .page-about .values-grid .value-card:hover h4{color:#f3efe8}
 .page-about .values-grid .value-card:hover p{color:rgba(222,229,241,.72)}
 /* OPERATE */
 .page-about .operate-section{position:relative;overflow:hidden;padding:clamp(105px,9vw,150px) 0;background:#08152d;isolation:isolate}
 .page-about .operate-head{position:relative;z-index:2;max-width:1000px;margin-bottom:clamp(60px,7vw,95px)}
 .page-about .operate-head .label{color:#dda044}
-.page-about .operate-line{position:relative;display:block;width:125px;height:1px;margin-top:17px;background:#d99a32}
 .page-about .operate-head .display{max-width:1000px;margin:38px 0 0;font-family:var(--font-display);font-size:clamp(58px,5.1vw,92px);font-weight:500;line-height:.96;letter-spacing:-2px;color:#f5f1e9;text-wrap:balance}
 .page-about .operate-grid{position:relative;z-index:2;display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
 .page-about .operate-card{position:relative;overflow:hidden;min-height:390px;padding:42px 36px;border:1px solid rgba(255,255,255,.09);background:rgba(255,255,255,.06);box-shadow:none;transition:transform .4s ease,border-color .4s ease,background .4s ease}
 .page-about .operate-card:hover{transform:translateY(-3px);border-color:rgba(218,151,45,.28);background:rgba(255,255,255,.085)}
-.page-about .operate-card-line{display:block;width:55px;height:2px;margin-bottom:70px;background:#d99a32}
 .page-about .operate-card h4{margin:0 0 25px;font-family:var(--font-display);font-size:clamp(29px,2vw,38px);font-weight:500;line-height:1.08;letter-spacing:-0.5px;color:#f7f2ea}
-.page-about .operate-card p{margin:0;font-family:var(--font-body);font-size:15px;line-height:1.8;color:rgba(207,216,232,.72)}
+.page-about .operate-card p{margin:0;font-family:var(--font-body);font-size:17px;line-height:1.8;color:rgba(207,216,232,.72)}
 /* COMPANY */
 .page-about .company-section{padding:clamp(105px,9vw,150px) 0;background:#eceae4}
 .page-about .company-grid{display:grid;grid-template-columns:minmax(0,.7fr) minmax(540px,1fr);gap:clamp(65px,8vw,130px);align-items:start}
@@ -69,8 +60,8 @@
 .page-about .spec li{display:grid;grid-template-columns:1.3fr .65fr;gap:30px;align-items:center;padding:24px 32px;border-bottom:1px solid rgba(17,26,51,.08);transition:background .3s ease,padding-left .3s ease}
 .page-about .spec li:last-child{border-bottom:0}
 .page-about .spec li:hover{padding-left:38px;background:rgba(255,255,255,.42)}
-.page-about .spec .k{font-family:var(--font-body);font-size:14px;font-weight:500;line-height:1.5;color:#4d5c75}
-.page-about .spec .v{text-align:right;font-family:var(--font-mono);font-size:10px;font-weight:600;letter-spacing:1.8px;text-transform:uppercase;color:#bd7d19}
+.page-about .spec .k{font-family:var(--font-body);font-size:16px;font-weight:500;line-height:1.5;color:#4d5c75}
+.page-about .spec .v{text-align:right;font-family:var(--font-mono);font-size:12px;font-weight:600;letter-spacing:1.8px;text-transform:uppercase;color:#bd7d19}
 /* RESPONSIVE */
 @media(max-width:1050px){
 .page-about .about-hero-grid,.page-about .about-split,.page-about .company-grid{grid-template-columns:1fr}
@@ -92,7 +83,6 @@
 .page-about .about-body p{font-size:16px}
 .page-about .pillar-grid,.page-about .operate-grid,.page-about .values-grid{grid-template-columns:1fr}
 .page-about .pillar-card,.page-about .operate-card{min-height:auto}
-.page-about .pillar-line,.page-about .operate-card-line{margin-bottom:45px}
 .page-about .values-grid .value-card{min-height:235px}
 .page-about .values-grid .ch{margin-bottom:38px}
 .page-about .company-grid{gap:45px}

@@ -15,7 +15,6 @@ export default function Services() {
         <div className="sv-hero-layout">
 
           <div className="sv-hero-copy">
-            <span className="sv-hero-rule" aria-hidden="true"></span>
 
             <h1 className="display">
               Seven jobs that keep the network running.
@@ -51,7 +50,7 @@ export default function Services() {
           <div className="shell sv-row-inner">
 
             <div className="sv-title">
-              <span className="sv-title-rule" aria-hidden="true"></span>
+              <Icon name="store" className="card-icon sv-icon" />
               <h3 className="display">Franchising</h3>
             </div>
 
@@ -76,7 +75,7 @@ export default function Services() {
           <div className="shell sv-row-inner sv-row-reverse">
 
             <div className="sv-title">
-              <span className="sv-title-rule" aria-hidden="true"></span>
+              <Icon name="grid" className="card-icon sv-icon" />
               <h3 className="display">Shelf platform</h3>
             </div>
 
@@ -98,7 +97,7 @@ export default function Services() {
           <div className="shell sv-row-inner">
 
             <div className="sv-title">
-              <span className="sv-title-rule" aria-hidden="true"></span>
+              <Icon name="phone" className="card-icon sv-icon" />
               <h3 className="display">Digital distribution</h3>
             </div>
 
@@ -114,13 +113,11 @@ export default function Services() {
 
         {/* ASSET MANAGEMENT */}
         <article className="svc-row sv-row sv-assets">
-          <span className="sv-asset-circle sv-asset-circle-one" aria-hidden="true"></span>
-          <span className="sv-asset-circle sv-asset-circle-two" aria-hidden="true"></span>
 
           <div className="shell sv-row-inner sv-row-reverse">
 
             <div className="sv-title">
-              <span className="sv-title-rule" aria-hidden="true"></span>
+              <Icon name="wrench" className="card-icon sv-icon" />
               <h3 className="display">Asset management</h3>
             </div>
 
@@ -136,13 +133,11 @@ export default function Services() {
 
         {/* FINANCIAL SERVICES */}
         <article className="svc-row sv-row sv-finance">
-          <span className="sv-finance-line sv-finance-line-one" aria-hidden="true"></span>
-          <span className="sv-finance-line sv-finance-line-two" aria-hidden="true"></span>
 
           <div className="shell sv-row-inner">
 
             <div className="sv-title">
-              <span className="sv-title-rule" aria-hidden="true"></span>
+              <Icon name="card" className="card-icon sv-icon" />
               <h3 className="display">Financial services</h3>
             </div>
 
@@ -158,13 +153,11 @@ export default function Services() {
 
         {/* SUPPLY CHAIN */}
         <article className="svc-row sv-row sv-supply">
-          <span className="sv-supply-ring sv-supply-ring-one" aria-hidden="true"></span>
-          <span className="sv-supply-ring sv-supply-ring-two" aria-hidden="true"></span>
 
           <div className="shell sv-row-inner sv-row-reverse">
 
             <div className="sv-title">
-              <span className="sv-title-rule" aria-hidden="true"></span>
+              <Icon name="truck" className="card-icon sv-icon" />
               <h3 className="display">Supply chain</h3>
             </div>
 
@@ -185,7 +178,7 @@ export default function Services() {
           <div className="shell sv-row-inner">
 
             <div className="sv-title">
-              <span className="sv-title-rule" aria-hidden="true"></span>
+              <Icon name="sprout" className="card-icon sv-icon" />
               <h3 className="display">Supplier development</h3>
             </div>
 

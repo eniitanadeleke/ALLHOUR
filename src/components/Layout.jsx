@@ -3,17 +3,37 @@ import { Outlet, useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
 import Navbar from './Navbar';
 import Footer from './Footer';
+import { SITE_URL, pages, notFound } from '../seo';
 
-const titles = {
-  '/': 'All Hours', '/about':'About | All Hours', '/formats':'Store formats | All Hours',
-  '/stock':'Stock supply | All Hours', '/franchise':'Franchise | All Hours', '/services':'What we do | All Hours',
-  '/partners':'Partners | All Hours', '/contact':'Contact | All Hours'
-};
+// Creates the tag on first use so route changes can keep head metadata in sync.
+function setHead(selector, attrs) {
+  let el = document.head.querySelector(selector);
+  if (!el) {
+    el = document.createElement(selector.startsWith('link') ? 'link' : 'meta');
+    document.head.appendChild(el);
+  }
+  Object.entries(attrs).forEach(([k, v]) => el.setAttribute(k, v));
+}
+
+function applySeo(pathname) {
+  const page = pages[pathname];
+  const { title, description } = page || notFound;
+  const url = SITE_URL + (pathname === '/' ? '/' : pathname);
+  document.title = title;
+  setHead('meta[name="description"]', { name: 'description', content: description });
+  setHead('meta[name="robots"]', { name: 'robots', content: page ? 'index, follow' : 'noindex, follow' });
+  setHead('link[rel="canonical"]', { rel: 'canonical', href: url });
+  setHead('meta[property="og:title"]', { property: 'og:title', content: title });
+  setHead('meta[property="og:description"]', { property: 'og:description', content: description });
+  setHead('meta[property="og:url"]', { property: 'og:url', content: url });
+  setHead('meta[name="twitter:title"]', { name: 'twitter:title', content: title });
+  setHead('meta[name="twitter:description"]', { name: 'twitter:description', content: description });
+}
 
 export default function Layout() {
   const location = useLocation();
   useEffect(() => {
-    document.title = titles[location.pathname] || 'Page not found | All Hours';
+    applySeo(location.pathname);
     requestAnimationFrame(() => {
       if (location.hash) document.querySelector(location.hash)?.scrollIntoView({ behavior:'smooth', block:'start' });
       else window.scrollTo({ top:0, behavior:'auto' });

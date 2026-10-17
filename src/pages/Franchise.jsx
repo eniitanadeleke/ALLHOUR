@@ -1,5 +1,5 @@
 import './Franchise.css';
-import franchisePhoto from '../assets/photos/franchise-owner-entrance.jpg';
+import franchisePhoto from '../assets/photos/franchise-store-aisle.jpg';
 import { Link } from 'react-router-dom';
 import Icon from '../components/Icon';
 
@@ -10,12 +10,8 @@ export default function Franchise() {
       {/* HERO */}
       <section className="hero shell franchise-hero">
 
-
-
-
         <div className="hero-grid fr-hero-grid">
           <div className="fr-hero-copy">
-            <span className="fr-label-line" aria-hidden="true"></span>
 
             <h1 className="display">
               Run the store. We run everything behind it.
@@ -23,7 +19,6 @@ export default function Franchise() {
           </div>
 
           <div className="fr-hero-side">
-            <span className="fr-side-line" aria-hidden="true"></span>
 
             <p className="lede">
               A franchise puts a working retail business in your hands, with the supply chain, the systems and the brand already built.
@@ -39,77 +34,66 @@ export default function Franchise() {
 
         <div className="plate wide fr-hero-photo">
           <span className="fr-photo-inner" aria-hidden="true"></span>
-          <span className="fr-photo-line" aria-hidden="true"></span>
 
-          <img className="plate-photo" src={franchisePhoto} alt="A store owner at the counter of his own shop" />
+          <img className="plate-photo" src={franchisePhoto} alt="A clean, fully stocked store aisle" />
         </div>
       </section>
 
-
       {/* WHAT YOU GET */}
       <section className="band shell fr-benefits">
-        <div className="head-block fr-section-head">
-          <span className="fr-label-line" aria-hidden="true"></span>
-
-          <h2 className="display">
-            A business, not a licence to use a name.
-          </h2>
+        <div className="fr-section-head">
+          <span className="label">What you get</span>
+          <h2 className="display">A business, not a licence to use a name.</h2>
+          <p>
+            Most franchises sell you a sign. An All Hours franchise comes with the store, the stock, the systems
+            and the people behind them, so you are trading properly from the first day.
+          </p>
         </div>
 
         <div className="fr-benefit-grid">
           <div className="card fr-benefit-card">
-            <span className="fr-card-line" aria-hidden="true"></span>
-            <span className="fr-card-dot" aria-hidden="true"></span>
+            <Icon name="ruler" className="card-icon" />
             <h4>Format and fit out</h4>
             <p>The store design, layout, equipment specification and opening plan for the format your site can carry.</p>
           </div>
 
           <div className="card fr-benefit-card">
-            <span className="fr-card-line" aria-hidden="true"></span>
-            <span className="fr-card-dot" aria-hidden="true"></span>
+            <Icon name="truck" className="card-icon" />
             <h4>Supply chain</h4>
             <p>Access to our buying power, our approved product range and our distribution schedule from day one.</p>
           </div>
 
           <div className="card fr-benefit-card">
-            <span className="fr-card-line" aria-hidden="true"></span>
-            <span className="fr-card-dot" aria-hidden="true"></span>
+            <Icon name="systems" className="card-icon" />
             <h4>Retail systems</h4>
             <p>Point of sale, stock control, reporting and the payment infrastructure that runs across the network.</p>
           </div>
 
           <div className="card fr-benefit-card">
-            <span className="fr-card-line" aria-hidden="true"></span>
-            <span className="fr-card-dot" aria-hidden="true"></span>
+            <Icon name="training" className="card-icon" />
             <h4>Training</h4>
-            <p>Store management, customer service, pharmacy compliance where relevant, and ongoing refreshers for your team.</p>
+            <p>Store management, customer service, stock control and ongoing refreshers for your team.</p>
           </div>
 
           <div className="card fr-benefit-card">
-            <span className="fr-card-line" aria-hidden="true"></span>
-            <span className="fr-card-dot" aria-hidden="true"></span>
+            <Icon name="megaphone" className="card-icon" />
             <h4>Marketing</h4>
             <p>The brand is marketed as a network. You are not left to build recognition on your own street alone.</p>
           </div>
 
           <div className="card fr-benefit-card">
-            <span className="fr-card-line" aria-hidden="true"></span>
-            <span className="fr-card-dot" aria-hidden="true"></span>
+            <Icon name="support" className="card-icon" />
             <h4>Support</h4>
             <p>A named contact, scheduled visits, and help when a supplier, a licence or a season causes trouble.</p>
           </div>
         </div>
       </section>
 
-
       {/* WHAT WE LOOK FOR */}
       <section className="band night fr-criteria">
 
-
-
         <div className="shell">
           <div className="head-block fr-criteria-head">
-            <span className="fr-night-line" aria-hidden="true"></span>
 
             <h2 className="display">
               The four things that decide an application.
@@ -120,10 +104,7 @@ export default function Franchise() {
             <div className="item fr-criteria-card">
               <div className="fr-step-top">
                 <span className="step">01</span>
-                <span className="fr-step-dot" aria-hidden="true"></span>
               </div>
-
-              <span className="fr-step-rule" aria-hidden="true"></span>
 
               <h4>The site</h4>
               <p>Footfall first, floor area second. The location has to carry the format.</p>
@@ -132,10 +113,7 @@ export default function Franchise() {
             <div className="item fr-criteria-card">
               <div className="fr-step-top">
                 <span className="step">02</span>
-                <span className="fr-step-dot" aria-hidden="true"></span>
               </div>
-
-              <span className="fr-step-rule" aria-hidden="true"></span>
 
               <h4>The capital</h4>
               <p>Enough to fit out, stock and run the store past the point where it turns.</p>
@@ -144,10 +122,7 @@ export default function Franchise() {
             <div className="item fr-criteria-card">
               <div className="fr-step-top">
                 <span className="step">03</span>
-                <span className="fr-step-dot" aria-hidden="true"></span>
               </div>
-
-              <span className="fr-step-rule" aria-hidden="true"></span>
 
               <h4>The operator</h4>
               <p>Someone who will be in the store, not someone who will hire it out and visit monthly.</p>
@@ -156,33 +131,26 @@ export default function Franchise() {
             <div className="item fr-criteria-card">
               <div className="fr-step-top">
                 <span className="step">04</span>
-                <span className="fr-step-dot" aria-hidden="true"></span>
               </div>
 
-              <span className="fr-step-rule" aria-hidden="true"></span>
-
               <h4>The compliance</h4>
-              <p>Willingness to run to our standards, including pharmacy regulation where the format includes one.</p>
+              <p>Willingness to run to our standards, including the licensing and regulation that apply to your format.</p>
             </div>
           </div>
         </div>
       </section>
 
-
       {/* PROCESS */}
       <section className="band shell fr-process">
 
-
         <div className="fr-process-layout">
           <div className="fr-process-copy">
-            <span className="fr-label-line" aria-hidden="true"></span>
 
             <h2 className="display">
               From application to opening.
             </h2>
 
             <div className="fr-process-intro">
-              <span className="fr-process-intro-line" aria-hidden="true"></span>
               <p>
                 We come back on every application, including the ones we turn down, and we tell you why.
               </p>
@@ -192,55 +160,46 @@ export default function Franchise() {
           <div className="fr-process-panel">
             <ul className="spec fr-process-list">
               <li>
-                <span className="fr-process-dot" aria-hidden="true"></span>
                 <span className="k">Application</span>
                 <span className="v">You send the form</span>
               </li>
 
               <li>
-                <span className="fr-process-dot" aria-hidden="true"></span>
                 <span className="k">First response</span>
                 <span className="v">Within five working days</span>
               </li>
 
               <li>
-                <span className="fr-process-dot" aria-hidden="true"></span>
                 <span className="k">Site assessment</span>
                 <span className="v">We visit and assess</span>
               </li>
 
               <li>
-                <span className="fr-process-dot" aria-hidden="true"></span>
                 <span className="k">Terms</span>
                 <span className="v">Written offer, one document</span>
               </li>
 
               <li>
-                <span className="fr-process-dot" aria-hidden="true"></span>
                 <span className="k">Fit out</span>
                 <span className="v">Timeline to supply</span>
               </li>
 
               <li>
-                <span className="fr-process-dot" aria-hidden="true"></span>
                 <span className="k">Training</span>
                 <span className="v">Before opening</span>
               </li>
 
               <li>
-                <span className="fr-process-dot" aria-hidden="true"></span>
                 <span className="k">Opening</span>
                 <span className="v">Supported by our team</span>
               </li>
 
               <li>
-                <span className="fr-process-dot" aria-hidden="true"></span>
                 <span className="k">Investment range</span>
                 <span className="v">To supply</span>
               </li>
 
               <li>
-                <span className="fr-process-dot" aria-hidden="true"></span>
                 <span className="k">Franchise fee</span>
                 <span className="v">To supply</span>
               </li>
@@ -249,23 +208,19 @@ export default function Franchise() {
         </div>
       </section>
 
-
       {/* APPLICATION */}
       <section className="band sunk fr-apply">
 
-
-
         <div className="shell fr-apply-layout">
           <div className="fr-apply-copy">
-            <span className="fr-label-line" aria-hidden="true"></span>
-
-            <h2 className="display">
-              Send us your site.
-            </h2>
+            <span className="label">Apply</span>
+            <h2 className="display">Send us your site.</h2>
+            <p>
+              Tell us where the site is and what you have in mind. We reply to every application within five working days.
+            </p>
           </div>
 
           <div className="form-wrap fr-form-wrap" id="fr-form">
-            <span className="fr-form-line" aria-hidden="true"></span>
 
             <form className="js-form" noValidate>
               <div className="fgrid">
@@ -298,9 +253,7 @@ export default function Franchise() {
                 <div className="field">
                   <label htmlFor="f-fmt">Format you have in mind</label>
                   <select id="f-fmt">
-                    <option>Supermarket and pharmacy</option>
-                    <option>Supermarket only</option>
-                    <option>Pharmacy only</option>
+                    <option>Supermarket</option>
                     <option>Mini mart</option>
                     <option>Neighbourhood store</option>
                     <option>Not sure yet</option>

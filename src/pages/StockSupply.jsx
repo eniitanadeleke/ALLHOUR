@@ -1,5 +1,5 @@
 import './StockSupply.css';
-import stockPhoto from '../assets/photos/stock-shop-owner.jpg';
+import stockPhoto from '../assets/photos/stock-warehouse-aisle.jpg';
 import { Link } from 'react-router-dom';
 import Icon from '../components/Icon';
 
@@ -9,12 +9,8 @@ export default function StockSupply() {
 
       <section className="hero shell stock-hero">
 
-
-
-
         <div className="hero-grid stock-hero-grid">
           <div className="stock-hero-copy">
-            <span className="stock-label-line" aria-hidden="true"></span>
 
             <h1 className="display">
               Get stocked now.<br />
@@ -23,7 +19,6 @@ export default function StockSupply() {
           </div>
 
           <div className="stock-hero-side">
-            <span className="stock-side-line" aria-hidden="true"></span>
 
             <p className="lede">
               Fill your shelves without paying for the stock up front.
@@ -42,20 +37,14 @@ export default function StockSupply() {
         </div>
 
         <div className="plate wide stock-hero-photo">
-          <span className="stock-photo-inner" aria-hidden="true"></span>
 
-
-          <img className="plate-photo" src={stockPhoto} alt="An independent shop owner at her counter in front of fully stocked shelves" />
+          <img className="plate-photo" src={stockPhoto} alt="Warehouse racking stacked with cartons of stock ready for delivery" />
         </div>
       </section>
 
-
       <section className="band shell stock-process">
 
-
-
         <div className="head-block stock-process-head">
-          <span className="stock-label-line" aria-hidden="true"></span>
           <h2 className="display">Four steps, start to shelf.</h2>
         </div>
 
@@ -64,11 +53,9 @@ export default function StockSupply() {
           <div className="item stock-step">
             <div className="stock-step-head">
               <span className="step">Step 01</span>
-              <span className="stock-step-dot" aria-hidden="true"></span>
             </div>
 
-            <span className="stock-step-rule" aria-hidden="true"></span>
-
+            <Icon name="clipboard" className="card-icon" />
             <h4>Apply</h4>
 
             <p>
@@ -76,15 +63,12 @@ export default function StockSupply() {
             </p>
           </div>
 
-
           <div className="item stock-step">
             <div className="stock-step-head">
               <span className="step">Step 02</span>
-              <span className="stock-step-dot" aria-hidden="true"></span>
             </div>
 
-            <span className="stock-step-rule" aria-hidden="true"></span>
-
+            <Icon name="approved" className="card-icon" />
             <h4>Get approved</h4>
 
             <p>
@@ -92,15 +76,12 @@ export default function StockSupply() {
             </p>
           </div>
 
-
           <div className="item stock-step">
             <div className="stock-step-head">
               <span className="step">Step 03</span>
-              <span className="stock-step-dot" aria-hidden="true"></span>
             </div>
 
-            <span className="stock-step-rule" aria-hidden="true"></span>
-
+            <Icon name="cart" className="card-icon" />
             <h4>Order from the list</h4>
 
             <p>
@@ -108,15 +89,12 @@ export default function StockSupply() {
             </p>
           </div>
 
-
           <div className="item stock-step">
             <div className="stock-step-head">
               <span className="step">Step 04</span>
-              <span className="stock-step-dot" aria-hidden="true"></span>
             </div>
 
-            <span className="stock-step-rule" aria-hidden="true"></span>
-
+            <Icon name="repeat" className="card-icon" />
             <h4>Repay as you sell</h4>
 
             <p>
@@ -127,64 +105,55 @@ export default function StockSupply() {
         </div>
       </section>
 
-
       <section className="band night stock-benefits">
-
-
-
 
         <div className="shell stock-benefits-layout">
 
           <div className="stock-benefits-copy">
-            <span className="benefit-label-line" aria-hidden="true"></span>
 
             <h2 className="display">
               The advantages of a large buyer, on a small shop.
             </h2>
 
-            <span className="benefit-copy-line" aria-hidden="true"></span>
           </div>
-
 
           <div className="stock-benefits-content">
 
             <ul className="plain benefit-list">
 
               <li>
-                <span className="benefit-marker" aria-hidden="true"></span>
+                <Icon name="check" className="list-check" />
                 <span>Stock on your shelf without a large cash outlay</span>
               </li>
 
               <li>
-                <span className="benefit-marker" aria-hidden="true"></span>
+                <Icon name="check" className="list-check" />
                 <span>Wholesale pricing you would not reach on your own</span>
               </li>
 
               <li>
-                <span className="benefit-marker" aria-hidden="true"></span>
+                <Icon name="check" className="list-check" />
                 <span>An approved product list, so you are not guessing what sells</span>
               </li>
 
               <li>
-                <span className="benefit-marker" aria-hidden="true"></span>
+                <Icon name="check" className="list-check" />
                 <span>Delivery to your shop, on a schedule</span>
               </li>
 
               <li>
-                <span className="benefit-marker" aria-hidden="true"></span>
+                <Icon name="check" className="list-check" />
                 <span>A repayment plan tied to sales rather than a fixed monthly bill</span>
               </li>
 
               <li>
-                <span className="benefit-marker" aria-hidden="true"></span>
+                <Icon name="check" className="list-check" />
                 <span>A credit record with a bank, built from real trading</span>
               </li>
 
             </ul>
 
-
             <div className="callout benefit-callout">
-              <span className="benefit-callout-line" aria-hidden="true"></span>
 
               <p>
                 <b>Terms to confirm.</b> Stock limits, repayment period, interest or service charge, and security requirements are set by the banking partner. Publish the exact terms here before launch.
@@ -196,29 +165,23 @@ export default function StockSupply() {
         </div>
       </section>
 
-
       <section className="band shell stock-audience">
-
-
 
         <div className="stock-audience-layout">
 
           <div className="stock-audience-copy">
-            <span className="audience-label-line" aria-hidden="true"></span>
 
             <h2 className="display">
               If you already run a shop, this is for you.
             </h2>
 
             <div className="audience-intro">
-              <span className="audience-intro-line" aria-hidden="true"></span>
 
               <p>
                 We are looking for shop owners who are trading, who know their customers, and who want to carry more stock than their cash allows.
               </p>
             </div>
           </div>
-
 
           <div className="audience-cards">
 
@@ -232,7 +195,6 @@ export default function StockSupply() {
 
                 <div>
                   <h4>What we need from you</h4>
-                  <span className="audience-heading-line" aria-hidden="true"></span>
                 </div>
               </div>
 
@@ -283,7 +245,6 @@ export default function StockSupply() {
               </ul>
             </div>
 
-
             <div className="audience-card audience-card-no">
               <span className="audience-card-rail" aria-hidden="true"></span>
 
@@ -294,7 +255,6 @@ export default function StockSupply() {
 
                 <div>
                   <h4>What we do not ask for</h4>
-                  <span className="audience-heading-line" aria-hidden="true"></span>
                 </div>
               </div>
 
@@ -336,24 +296,17 @@ export default function StockSupply() {
         </div>
       </section>
 
-
       <section className="band sunk stock-faq-section">
-
-
-
 
         <div className="shell stock-faq-layout">
 
           <div className="stock-faq-copy">
-            <span className="stock-faq-label-line" aria-hidden="true"></span>
 
             <h2 className="display">
               What shop owners ask first.
             </h2>
 
-            <span className="stock-faq-copy-line" aria-hidden="true"></span>
           </div>
-
 
           <div className="faq stock-faq">
 
@@ -378,7 +331,6 @@ export default function StockSupply() {
               </div>
             </details>
 
-
             <details className="stock-faq-card">
               <summary>
                 <span className="stock-faq-icon" aria-hidden="true">
@@ -399,7 +351,6 @@ export default function StockSupply() {
                 </p>
               </div>
             </details>
-
 
             <details className="stock-faq-card">
               <summary>
@@ -422,7 +373,6 @@ export default function StockSupply() {
               </div>
             </details>
 
-
             <details className="stock-faq-card">
               <summary>
                 <span className="stock-faq-icon" aria-hidden="true">
@@ -443,7 +393,6 @@ export default function StockSupply() {
                 </p>
               </div>
             </details>
-
 
             <details className="stock-faq-card">
               <summary>
@@ -471,7 +420,6 @@ export default function StockSupply() {
         </div>
       </section>
 
-
       <section className="band shell" id="stock-form">
         <div className="split">
 
@@ -482,7 +430,6 @@ export default function StockSupply() {
               Fill this in and a member of our field team will contact you to arrange a shop visit.
             </p>
           </div>
-
 
           <div className="form-wrap">
 
@@ -520,7 +467,6 @@ export default function StockSupply() {
 
                   <select id="k-type">
                     <option>Groceries and provisions</option>
-                    <option>Medicines and health items</option>
                     <option>Household supplies</option>
                     <option>A mix of the above</option>
                     <option>Something else</option>
@@ -560,7 +506,6 @@ export default function StockSupply() {
 
               </div>
 
-
               <div className="btn-row">
                 <button className="btn sun" type="submit">
                   Send application
@@ -572,7 +517,6 @@ export default function StockSupply() {
               </p>
 
             </form>
-
 
             <div className="form-done">
               <h4>Application received.</h4>

@@ -10,9 +10,6 @@ export default function Home() {
       {/* HERO SECTION */}
       <section className="hero shell">
 
-
-
-
         <div className="hero-grid">
 
           <div className="hero-copy">
@@ -23,7 +20,6 @@ export default function Home() {
               All Day.
             </h1>
 
-            <span className="hero-line" aria-hidden="true"></span>
           </div>
 
           <div className="hero-content">
@@ -31,8 +27,8 @@ export default function Home() {
             <div className="hero-panel">
               <p className="lede">
                 We build and run retail that stays open, stays stocked and stays
-                close to the people who need it. Supermarkets, pharmacies,
-                hypermarkets, mini marts and neighbourhood stores.
+                close to the people who need it. Supermarkets, hypermarkets,
+                mini marts and neighbourhood stores.
               </p>
 
               <div className="btn-row">
@@ -50,47 +46,19 @@ export default function Home() {
 
         </div>
 
-
         {/* 24 HOUR STRIP */}
-        <div className="spine hero-spine" aria-hidden="true">
-
-
-
+        <div className="spine hero-spine">
           <HourSpine />
-
-          <div className="spine-key">
-            <span>
-              <b>00:00</b> Night trading
-            </span>
-
-            <span>
-              <b>All hours</b>
-            </span>
-
-            <span>
-              Day trading <b>23:59</b>
-            </span>
-          </div>
-
         </div>
-
 
         {/* HERO PHOTOGRAPH */}
         <div className="plate wide hero-photo">
 
           <div className="hero-photo-overlay"></div>
 
-
-
           <div className="hero-photo-badge">
             Open longer. Stocked better.
           </div>
-
-
-
-
-
-
 
           <div className="hero-photo-content">
 
@@ -104,14 +72,8 @@ export default function Home() {
 
       </section>
 
-
       {/* INTRO SECTION */}
       <section className="band shell intro-section">
-
-        <div className="intro-bg-number" aria-hidden="true">
-          24
-        </div>
-
 
 
         <div className="split">
@@ -121,8 +83,6 @@ export default function Home() {
             <h2 className="display">
               A shop is only useful when it is open and it has what you came for.
             </h2>
-
-            <span className="intro-line" aria-hidden="true"></span>
 
           </div>
 
@@ -152,7 +112,6 @@ export default function Home() {
 
       </section>
 
-
       {/* FOUR WAYS SECTION */}
       <section className="band sunk">
         <div className="shell">
@@ -165,6 +124,7 @@ export default function Home() {
 
             <div className="item">
               <span className="step">01</span>
+              <Icon name="package" className="card-icon" />
               <h4>Stock your shop</h4>
               <p>
                 Independent shop owners receive stock from an approved list and
@@ -174,6 +134,7 @@ export default function Home() {
 
             <div className="item">
               <span className="step">02</span>
+              <Icon name="store" className="card-icon" />
               <h4>Take a franchise</h4>
               <p>
                 Run an All Hours store under our brand, systems, supply chain and
@@ -183,6 +144,7 @@ export default function Home() {
 
             <div className="item">
               <span className="step">03</span>
+              <Icon name="truck" className="card-icon" />
               <h4>Sell through us</h4>
               <p>
                 Suppliers and brands reach customers across our stores and our
@@ -192,6 +154,7 @@ export default function Home() {
 
             <div className="item">
               <span className="step">04</span>
+              <Icon name="bank" className="card-icon" />
               <h4>Fund the growth</h4>
               <p>
                 Banks and capital partners fund store rollout, stock finance and
@@ -203,19 +166,18 @@ export default function Home() {
         </div>
       </section>
 
-
       {/* STORE FORMATS */}
       <section className="band shell formats-section">
 
         <div className="head-block">
 
           <h2 className="display">
-            Six formats, one standard.
+            Five formats, one standard.
           </h2>
 
           <p>
-            A full All Hours store carries a supermarket section and a pharmacy.
-            Smaller shops carry one or the other, depending on the site.
+            Every format runs on the same supply chain, systems and standards.
+            The size changes with the site. The standard does not.
           </p>
 
         </div>
@@ -223,6 +185,7 @@ export default function Home() {
         <div className="g3">
 
           <div className="card">
+            <Icon name="cart" className="card-icon" />
             <h4>Supermarket</h4>
             <p>
               Everyday groceries and household supplies at neighbourhood scale,
@@ -231,14 +194,7 @@ export default function Home() {
           </div>
 
           <div className="card">
-            <h4>Pharmacy</h4>
-            <p>
-              A licensed pharmacy counter inside the store. Prescriptions, over
-              the counter medicines and basic health checks.
-            </p>
-          </div>
-
-          <div className="card">
+            <Icon name="warehouse" className="card-icon" />
             <h4>Hypermarket</h4>
             <p>
               Bulk buying at the best available price, and the wholesale point
@@ -247,6 +203,7 @@ export default function Home() {
           </div>
 
           <div className="card">
+            <Icon name="fuel" className="card-icon" />
             <h4>Mini mart</h4>
             <p>
               Convenience where people pass through. Fuel stations, car parks,
@@ -255,6 +212,7 @@ export default function Home() {
           </div>
 
           <div className="card">
+            <Icon name="house" className="card-icon" />
             <h4>Neighbourhood store</h4>
             <p>
               Small formats and small pack sizes for customers who buy daily
@@ -263,6 +221,7 @@ export default function Home() {
           </div>
 
           <div className="card">
+            <Icon name="building" className="card-icon" />
             <h4>Shopping mall</h4>
             <p>
               Anchor developments that hold the full format range under one roof,
@@ -280,18 +239,12 @@ export default function Home() {
 
       </section>
 
-
       {/* STOCK SUPPLY SECTION */}
       <section className="band night stock-section">
-
-
-
 
         <div className="shell stock-layout">
 
           <div className="stock-copy">
-
-            <span className="stock-accent-line" aria-hidden="true"></span>
 
             <h2 className="display">
               Get stocked now.
@@ -299,9 +252,6 @@ export default function Home() {
               Pay as you sell.
             </h2>
 
-            <div className="stock-ghost-number" aria-hidden="true">
-              24
-            </div>
 
             <div className="stock-seal" aria-hidden="true">
               <span className="seal-ring">
@@ -312,10 +262,7 @@ export default function Home() {
 
           </div>
 
-
           <div className="stock-panel">
-
-
 
             <div className="stock-info-row">
 
@@ -356,24 +303,18 @@ export default function Home() {
 
       </section>
 
-
       {/* FRANCHISE */}
       <section className="band shell franchise-section">
-
-
 
         <div className="franchise-layout">
 
           <div className="franchise-copy">
-
-            <span className="franchise-copy-line" aria-hidden="true"></span>
 
             <h2 className="display">
               Run the store. We run everything behind it.
             </h2>
 
           </div>
-
 
           <div className="franchise-panel">
 
@@ -401,11 +342,8 @@ export default function Home() {
 
       </section>
 
-
       {/* PARTNERS */}
       <section className="band shell partners-section">
-
-
 
         <div className="partners-layout">
 
@@ -415,10 +353,7 @@ export default function Home() {
               Our shelf is a route to market.
             </h2>
 
-            <span className="partners-copy-line" aria-hidden="true"></span>
-
           </div>
-
 
           <div className="partners-panel">
 
@@ -452,38 +387,30 @@ export default function Home() {
 
       </section>
 
-
       {/* NUMBERS */}
       <section className="band shell numbers-section">
-
-
-
 
         <div className="proof">
 
           <div className="proof-card">
-            <span className="proof-line" aria-hidden="true"></span>
             <span className="n">120</span>
             <span className="t">Stores trading and in development</span>
 
           </div>
 
           <div className="proof-card">
-            <span className="proof-line" aria-hidden="true"></span>
             <span className="n">1,400</span>
             <span className="t">Independent shops on the stock supply scheme</span>
 
           </div>
 
           <div className="proof-card">
-            <span className="proof-line" aria-hidden="true"></span>
             <span className="n">6</span>
             <span className="t">Markets we operate in</span>
 
           </div>
 
           <div className="proof-card">
-            <span className="proof-line" aria-hidden="true"></span>
             <span className="n">18hrs</span>
             <span className="t">Average daily trading window</span>
 
@@ -493,18 +420,12 @@ export default function Home() {
 
       </section>
 
-
       {/* ENQUIRY */}
       <section className="band shell enquiry-section">
-
-
-
 
         <div className="enquiry-layout">
 
           <div className="enquiry-copy">
-
-            <span className="enquiry-line" aria-hidden="true"></span>
 
             <h2 className="display">
               Tell us what you need.
@@ -516,10 +437,7 @@ export default function Home() {
 
           </div>
 
-
           <div className="form-wrap">
-
-
 
             <form className="js-form">
 

@@ -15,7 +15,6 @@ export default function Footer() {
               Close to you, whatever the hour.
             </h2>
 
-            <span className="footer-accent" aria-hidden="true"></span>
           </div>
 
           <div className="body-col footer-cta-body">
@@ -41,10 +40,7 @@ export default function Footer() {
         </div>
       </section>
 
-
       <footer className="site">
-
-
 
         <div className="shell">
 
@@ -55,17 +51,13 @@ export default function Footer() {
                 <img src={logo} alt="All Hours" />
               </Link>
               <h5>All Hours</h5>
-              <span className="footer-heading-line" aria-hidden="true"></span>
 
               <p>Registered office to supply</p>
               <p>Company registration to supply</p>
-              <p>Pharmacy registration to supply</p>
             </div>
-
 
             <div className="footer-col">
               <h5>Business</h5>
-              <span className="footer-heading-line" aria-hidden="true"></span>
 
               <Link to="/stock">Stock supply</Link>
               <Link to="/franchise">Franchise</Link>
@@ -73,10 +65,8 @@ export default function Footer() {
               <Link to="/services">What we do</Link>
             </div>
 
-
             <div className="footer-col">
               <h5>Company</h5>
-              <span className="footer-heading-line" aria-hidden="true"></span>
 
               <Link to="/about">About</Link>
               <Link to="/formats">Store formats</Link>
@@ -84,10 +74,8 @@ export default function Footer() {
               <Link to="/contact">Careers</Link>
             </div>
 
-
             <div className="footer-col">
               <h5>Reach us</h5>
-              <span className="footer-heading-line" aria-hidden="true"></span>
 
               <a href={`mailto:${EMAIL_INFO}`}>{EMAIL_INFO}</a>
               <a href={`mailto:${EMAIL_CONTACT}`}>{EMAIL_CONTACT}</a>
@@ -96,7 +84,6 @@ export default function Footer() {
 
           </div>
 
-
           <div className="fsign">
 
             <div className="footer-tag-wrap">
@@ -104,7 +91,6 @@ export default function Footer() {
                 Extraordinary. All Day.
               </span>
 
-              <span className="footer-tag-line" aria-hidden="true"></span>
             </div>
 
             <span className="small">

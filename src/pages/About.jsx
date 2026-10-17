@@ -1,5 +1,6 @@
 import './About.css';
-import aboutPhoto from '../assets/photos/about-store-restocking.jpg';
+import aboutPhoto from '../assets/photos/about-fresh-produce.jpg';
+import Icon from '../components/Icon';
 
 export default function About() {
   return (
@@ -8,11 +9,8 @@ export default function About() {
       {/* HERO */}
       <section className="hero shell about-hero">
 
-
-
         <div className="hero-grid about-hero-grid">
           <div className="about-hero-copy">
-            <span className="about-label-line" aria-hidden="true"></span>
             <h1 className="display">Retail that shows up, every day, at a price people can meet.</h1>
           </div>
 
@@ -22,50 +20,45 @@ export default function About() {
         </div>
 
         <div className="plate wide about-photo">
-          <span className="photo-frame" aria-hidden="true"></span>
-          <img className="plate-photo" src={aboutPhoto} alt="An All Hours team member restocking shelves inside a supermarket" loading="lazy" />
+          <img className="plate-photo" src={aboutPhoto} alt="A produce wall stocked with fresh vegetables and fruit" loading="lazy" />
         </div>
       </section>
-
 
       {/* WHY WE EXIST */}
       <section className="band shell about-why">
         <div className="split about-split">
           <div className="about-section-title">
-            <span className="about-label-line" aria-hidden="true"></span>
             <h2 className="display">Shopping is the one thing everybody does.</h2>
           </div>
 
           <div className="body-col about-body">
-            <p>Life is a collection of experiences. Most of them are ordinary, and buying food, medicine and household supplies is about as ordinary as it gets. We were founded to add something to that ordinary moment, without adding to the price.</p>
+            <p>Life is a collection of experiences. Most of them are ordinary, and buying food and household supplies is about as ordinary as it gets. We were founded to add something to that ordinary moment, without adding to the price.</p>
             <p>Satisfying a customer today takes more than a shelf. It takes quality worth paying for, service that respects the person, a supply chain that does not break, and suppliers who are treated as partners rather than vendors.</p>
             <p>As trade barriers fall, emerging markets are getting attention they have not had before. That attention should raise living standards where it lands. We are building to make sure it does.</p>
           </div>
         </div>
       </section>
 
-
       {/* VISION MISSION PHILOSOPHY */}
       <section className="band sunk about-pillars">
-
 
         <div className="shell">
           <div className="g3 pillar-grid">
 
             <div className="card pillar-card">
-              <span className="pillar-line" aria-hidden="true"></span>
+              <Icon name="eye" className="card-icon" />
               <h4>Our vision</h4>
               <p>To be the retailer of choice for high quality, affordable products and services. All day, all night, close to you.</p>
             </div>
 
             <div className="card pillar-card">
-              <span className="pillar-line" aria-hidden="true"></span>
+              <Icon name="target" className="card-icon" />
               <h4>Our mission</h4>
               <p>To lead a retail culture built on excellence in what we sell, how we serve, and the experiences we deliver through channels people can actually reach.</p>
             </div>
 
             <div className="card pillar-card">
-              <span className="pillar-line" aria-hidden="true"></span>
+              <Icon name="compass" className="card-icon" />
               <h4>Our philosophy</h4>
               <p>Extraordinary. All Day. We add the extra to everyday experiences for people who want their lives to be more enjoyable and more sustainable.</p>
             </div>
@@ -74,11 +67,9 @@ export default function About() {
         </div>
       </section>
 
-
       {/* VALUES */}
       <section className="band shell values-section">
         <div className="head-block values-head">
-          <span className="about-label-line" aria-hidden="true"></span>
           <h2 className="display">Our name is the list.</h2>
           <p>Eight values, one for each letter. They decide what we do, how we do it, and why.</p>
         </div>
@@ -136,34 +127,30 @@ export default function About() {
         </div>
       </section>
 
-
       {/* HOW WE OPERATE */}
       <section className="band night operate-section">
 
-
-
         <div className="shell">
           <div className="head-block operate-head">
-            <span className="operate-line" aria-hidden="true"></span>
             <h2 className="display">Built on best practice, adapted to the street.</h2>
           </div>
 
           <div className="g3 operate-grid">
 
             <div className="card operate-card">
-              <span className="operate-card-line" aria-hidden="true"></span>
+              <Icon name="store" className="card-icon" />
               <h4>Formats before floor space</h4>
               <p>We size the shop to the location and the income around it. A terminal needs a mini mart. A residential road needs a neighbourhood store. Forcing one format everywhere is how retailers lose money.</p>
             </div>
 
             <div className="card operate-card">
-              <span className="operate-card-line" aria-hidden="true"></span>
+              <Icon name="truck" className="card-icon" />
               <h4>Supply before scale</h4>
               <p>We do not open faster than we can keep stocked. Every new store is opened against a supply chain that can already serve it.</p>
             </div>
 
             <div className="card operate-card">
-              <span className="operate-card-line" aria-hidden="true"></span>
+              <Icon name="handshake" className="card-icon" />
               <h4>Partners before margin</h4>
               <p>Suppliers and franchise holders have to make money for the network to hold. We invest in supplier capacity rather than squeezing it.</p>
             </div>
@@ -172,13 +159,11 @@ export default function About() {
         </div>
       </section>
 
-
       {/* COMPANY DETAILS */}
       <section className="band sunk company-section">
         <div className="shell split company-grid">
 
           <div className="company-copy">
-            <span className="about-label-line" aria-hidden="true"></span>
             <h2 className="display">The details.</h2>
           </div>
 
@@ -192,16 +177,6 @@ export default function About() {
 
               <li>
                 <span className="k">Retail entity, CAC registration</span>
-                <span className="v">To supply</span>
-              </li>
-
-              <li>
-                <span className="k">Pharmacy entity, CAC registration</span>
-                <span className="v">To supply</span>
-              </li>
-
-              <li>
-                <span className="k">Pharmacy regulatory licence</span>
                 <span className="v">To supply</span>
               </li>
 

@@ -1,4 +1,5 @@
 import './Partners.css';
+import Icon from '../components/Icon';
 
 export default function Partners() {
   return (
@@ -6,13 +7,10 @@ export default function Partners() {
 
       {/* HERO */}
       <section className="hero shell partners-hero">
-        <span className="pt-hero-shape pt-shape-one" aria-hidden="true"></span>
-        <span className="pt-hero-shape pt-shape-two" aria-hidden="true"></span>
 
 
         <div className="pt-hero-layout">
           <div className="pt-hero-copy">
-            <span className="pt-label-rule" aria-hidden="true"></span>
 
             <h1 className="display">
               Suppliers, brands, banks and capital.
@@ -43,11 +41,10 @@ export default function Partners() {
 
           <article className="pt-partner pt-supplier">
             <div className="pt-partner-top">
-              <span className="pt-partner-rule" aria-hidden="true"></span>
-              <span className="pt-partner-mark" aria-hidden="true"></span>
             </div>
 
             <div className="pt-partner-content">
+              <Icon name="truck" className="card-icon" />
               <h4>Suppliers</h4>
 
               <p>
@@ -61,17 +58,17 @@ export default function Partners() {
 
             <ul className="pt-partner-list">
               <li>
-                <span aria-hidden="true"></span>
+                <Icon name="check" className="list-check" />
                 Volume across every format we operate
               </li>
 
               <li>
-                <span aria-hidden="true"></span>
+                <Icon name="check" className="list-check" />
                 Supplier development fund for capacity building
               </li>
 
               <li>
-                <span aria-hidden="true"></span>
+                <Icon name="check" className="list-check" />
                 Payment terms agreed in writing and kept
               </li>
             </ul>
@@ -80,11 +77,10 @@ export default function Partners() {
 
           <article className="pt-partner pt-brand">
             <div className="pt-partner-top">
-              <span className="pt-partner-rule" aria-hidden="true"></span>
-              <span className="pt-partner-mark" aria-hidden="true"></span>
             </div>
 
             <div className="pt-partner-content">
+              <Icon name="tag" className="card-icon" />
               <h4>Brands</h4>
 
               <p>
@@ -94,17 +90,17 @@ export default function Partners() {
 
             <ul className="pt-partner-list">
               <li>
-                <span aria-hidden="true"></span>
+                <Icon name="check" className="list-check" />
                 Placement across mall, hypermarket and neighbourhood formats
               </li>
 
               <li>
-                <span aria-hidden="true"></span>
+                <Icon name="check" className="list-check" />
                 Sales data back from the till
               </li>
 
               <li>
-                <span aria-hidden="true"></span>
+                <Icon name="check" className="list-check" />
                 In store activation space
               </li>
             </ul>
@@ -113,11 +109,10 @@ export default function Partners() {
 
           <article className="pt-partner pt-bank">
             <div className="pt-partner-top">
-              <span className="pt-partner-rule" aria-hidden="true"></span>
-              <span className="pt-partner-mark" aria-hidden="true"></span>
             </div>
 
             <div className="pt-partner-content">
+              <Icon name="bank" className="card-icon" />
               <h4>Banks and financial institutions</h4>
 
               <p>
@@ -127,22 +122,22 @@ export default function Partners() {
 
             <ul className="pt-partner-list">
               <li>
-                <span aria-hidden="true"></span>
+                <Icon name="check" className="list-check" />
                 Stock finance for vetted independent shop owners
               </li>
 
               <li>
-                <span aria-hidden="true"></span>
+                <Icon name="check" className="list-check" />
                 Point of sale and agency banking footprint
               </li>
 
               <li>
-                <span aria-hidden="true"></span>
+                <Icon name="check" className="list-check" />
                 Card issuing and payment infrastructure
               </li>
 
               <li>
-                <span aria-hidden="true"></span>
+                <Icon name="check" className="list-check" />
                 Customer acquisition at the counter
               </li>
             </ul>
@@ -151,11 +146,10 @@ export default function Partners() {
 
           <article className="pt-partner pt-capital">
             <div className="pt-partner-top">
-              <span className="pt-partner-rule" aria-hidden="true"></span>
-              <span className="pt-partner-mark" aria-hidden="true"></span>
             </div>
 
             <div className="pt-partner-content">
+              <Icon name="growth" className="card-icon" />
               <h4>Capital partners</h4>
 
               <p>
@@ -165,17 +159,17 @@ export default function Partners() {
 
             <ul className="pt-partner-list">
               <li>
-                <span aria-hidden="true"></span>
+                <Icon name="check" className="list-check" />
                 Named projects rather than a general fund
               </li>
 
               <li>
-                <span aria-hidden="true"></span>
+                <Icon name="check" className="list-check" />
                 Quarterly reporting, good news and bad news at the same speed
               </li>
 
               <li>
-                <span aria-hidden="true"></span>
+                <Icon name="check" className="list-check" />
                 Structures to suit the partner
               </li>
             </ul>
@@ -188,13 +182,10 @@ export default function Partners() {
       {/* NETWORK */}
       <section className="band night pt-network">
 
-        <span className="pt-network-ring pt-ring-one" aria-hidden="true"></span>
-        <span className="pt-network-ring pt-ring-two" aria-hidden="true"></span>
 
         <div className="shell pt-network-layout">
 
           <div className="pt-network-copy">
-            <span className="pt-night-rule" aria-hidden="true"></span>
 
             <h2 className="display">
               Three things a partner should check before believing any of this.
@@ -205,21 +196,21 @@ export default function Partners() {
             <ul className="plain pt-network-list">
 
               <li>
-                <span className="pt-network-marker" aria-hidden="true"></span>
+                <Icon name="check" className="list-check" />
                 <p>
                   Repayment on the stock scheme is tied to sales that pass through our own supply chain, so we can see the movement rather than take a borrower's word for it
                 </p>
               </li>
 
               <li>
-                <span className="pt-network-marker" aria-hidden="true"></span>
+                <Icon name="check" className="list-check" />
                 <p>
                   Our formats are sized to their locations, which keeps occupancy costs proportionate to what the site can actually earn
                 </p>
               </li>
 
               <li>
-                <span className="pt-network-marker" aria-hidden="true"></span>
+                <Icon name="check" className="list-check" />
                 <p>
                   Supply comes before scale, so a new store is never opened against a supply chain that cannot serve it
                 </p>
@@ -242,13 +233,11 @@ export default function Partners() {
 
       {/* CONTACT */}
       <section className="band shell pt-contact">
-        <span className="pt-contact-shape" aria-hidden="true"></span>
 
 
         <div className="pt-contact-layout">
 
           <div className="pt-contact-copy">
-            <span className="pt-label-rule" aria-hidden="true"></span>
 
             <h2 className="display">
               Tell us what you bring.

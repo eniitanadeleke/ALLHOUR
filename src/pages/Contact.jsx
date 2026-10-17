@@ -1,5 +1,6 @@
 import './Contact.css';
 import { EMAIL_INFO, EMAIL_CONTACT, FACEBOOK_URL } from '../contactInfo';
+import Icon from '../components/Icon';
 
 export default function Contact() {
   return (
@@ -8,17 +9,13 @@ export default function Contact() {
       {/* HERO */}
       <section className="hero shell contact-hero">
 
-
-
-
         <div className="ct-hero-layout">
           <div className="ct-hero-copy">
-            <span className="ct-gold-rule" aria-hidden="true"></span>
-
+            <span className="label">Contact</span>
+            <h1 className="display">Talk to the team behind the stores.</h1>
           </div>
 
           <div className="ct-hero-side">
-            <span className="ct-side-line" aria-hidden="true"></span>
 
             <p className="lede">
               Pick what your message is about and it goes straight to the right team.
@@ -26,27 +23,17 @@ export default function Contact() {
           </div>
         </div>
 
-        <div className="ct-colour-line" aria-hidden="true">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
       </section>
-
 
       {/* CONTACT DETAILS */}
       <section className="band shell ct-details">
-
 
         <div className="ct-card-grid">
 
           <article className="ct-card ct-card-office">
             <div className="ct-card-head">
-              <span className="ct-card-symbol" aria-hidden="true">
-                <span></span>
-              </span>
+              <Icon name="building" className="card-icon" />
 
-              <span className="ct-card-rule" aria-hidden="true"></span>
             </div>
 
             <h4>Corporate office</h4>
@@ -74,14 +61,10 @@ export default function Contact() {
             </ul>
           </article>
 
-
           <article className="ct-card ct-card-stock">
             <div className="ct-card-head">
-              <span className="ct-card-symbol" aria-hidden="true">
-                <span></span>
-              </span>
+              <Icon name="package" className="card-icon" />
 
-              <span className="ct-card-rule" aria-hidden="true"></span>
             </div>
 
             <h4>Stock supply team</h4>
@@ -94,14 +77,10 @@ export default function Contact() {
             </ul>
           </article>
 
-
           <article className="ct-card ct-card-partner">
             <div className="ct-card-head">
-              <span className="ct-card-symbol" aria-hidden="true">
-                <span></span>
-              </span>
+              <Icon name="handshake" className="card-icon" />
 
-              <span className="ct-card-rule" aria-hidden="true"></span>
             </div>
 
             <h4>Franchise and partnerships</h4>
@@ -117,28 +96,20 @@ export default function Contact() {
         </div>
       </section>
 
-
       {/* MESSAGE FORM */}
       <section className="band sunk ct-message">
-
-
-
 
         <div className="shell ct-message-layout">
 
           <div className="ct-message-copy">
-            <span className="ct-gold-rule" aria-hidden="true"></span>
 
             <h2 className="display">
               Send it here and it lands with the right team.
             </h2>
 
-            <span className="ct-copy-tail" aria-hidden="true"></span>
           </div>
 
-
           <div className="form-wrap ct-form-wrap">
-            <span className="ct-form-accent" aria-hidden="true"></span>
 
             <form className="js-form" noValidate>
               <div className="fgrid">
